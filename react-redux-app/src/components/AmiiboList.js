@@ -10,14 +10,13 @@ import { getData } from '../actions';
 
 const AmiiboList = () => {
 
-    const amiiboList = useSelector(state => state.amiiboList)
+    const amiiboList = useSelector(state => state)
     console.log(amiiboList)
+
     const dispatch = useDispatch()
     
     return(
         <>
-            <h1>NINTENDO IS LIFE</h1>
-            <p>A collection of Amiibos</p>
             <button onClick={() => dispatch(getData())}>
                 {amiiboList.isLoading ? (
                 <Loader
@@ -26,13 +25,12 @@ const AmiiboList = () => {
                 height={15}
                 width={100}
                 /> 
-                ) : ('Open Awesomeness')}
+                ) : ('Mario')}
              </button>
              <div>
-            {amiiboList.map(amiibo => <Amiibo amiibo={amiibo} />)}
+            {/* {amiiboList.map(amiibo => <Amiibo amiibo={amiibo} />)} */}
              </div>
         </>
-
     )
 }
 

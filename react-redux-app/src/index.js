@@ -15,11 +15,16 @@ import { Provider } from 'react-redux';
 //Import Redux Thunk
 import thunk from 'redux-thunk';
 
+//import Router from react router dom
+import { BrowserRouter as Router } from 'react-router-dom';
+
 const store = createStore(Reducer, applyMiddleware(thunk));
 
 ReactDOM.render(
 <Provider store={store}>
-    <App />
+    <Router>
+        <App />
+    </Router>
 </Provider>, document.getElementById('root'));
 
 

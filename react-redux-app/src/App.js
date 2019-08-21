@@ -3,13 +3,18 @@ import './App.css';
 
 //Import Components here
 import AmiiboList from './components/AmiiboList';
+import Home from './components/Home';
+
+//import Route from react router dom
+import { Route } from 'react-router-dom';
 
 
 function App() {
   
   return (
     <div className="App">
-      <AmiiboList />
+      <Route exact path='/' component={Home} />
+      <Route path='/amiibo-list' component={AmiiboList} />
     </div>
   );
 }
