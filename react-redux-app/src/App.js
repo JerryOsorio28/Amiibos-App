@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 
 //Import Components here
 import AmiiboList from './components/AmiiboList';

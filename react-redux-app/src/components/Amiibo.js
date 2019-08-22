@@ -10,6 +10,7 @@ const Amiibo = (amiibo) => {
             <img 
             src = {amiibo.amiibo.image} 
             style= {{ width: '200px', height: '300px'}}
+            alt=''
             />
             <h3>{amiibo.amiibo.name}</h3>
         </div>
