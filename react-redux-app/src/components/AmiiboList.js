@@ -1,13 +1,8 @@
-import React from 'react';
-
-//Only the best hook to grab state
-import { useSelector, useDispatch } from 'react-redux'
+import React, {useState, useEffect} from 'react';
+import axios from 'axios';
 
 //importing Amiibo component
 import Amiibo from './Amiibo';
-
-//importing action creators
-import { getData } from '../actions/';
 
 //allows to add a spinner while retrieving data from API
 import Loader from 'react-loader-spinner';
@@ -15,16 +10,28 @@ import Loader from 'react-loader-spinner';
 
 const AmiiboList = () => {
 
-    const amiiboList = useSelector(state => state.amiiboList)
+    const [amiiboList, setAmiiboList] = useState([]);
+
     console.log(amiiboList)
 
-    const dispatch = useDispatch()
+    useEffect(() => {
+        
+        axios.get('https://www.amiiboapi.com/api/amiibo/')
+            .then(res => {
+                // console.log(res.data.amiibo)
+                const data = res.data.amiibo
+                setAmiiboList({...amiiboList, data})
+            })
+            .catch(err => {
+                console.log(err.response)
+            })
+    },[])
 
     
     return(
         <>
         <div className='superMarioBros'>
-            <button onClick={() => dispatch(getData())}>
+            <button>
                 {amiiboList.isLoading ? (
                 <Loader
                 type="ThreeDots"
@@ -35,7 +42,6 @@ const AmiiboList = () => {
                 ) : ("Get Amiibos")}
             </button>
             <div className='amiiboList'>
-            {amiiboList.map(amiibo => <Amiibo amiibo={amiibo} />)}
             </div>
         </div>
         </>
