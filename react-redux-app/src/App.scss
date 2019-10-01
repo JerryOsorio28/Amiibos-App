@@ -2,7 +2,6 @@
   width: 100%;
 }
 
-
 .App{
   font-family: "Comic Sans MS", cursive, sans-serif;
   width: 100%;
@@ -44,16 +43,19 @@
   }
 
   .cardContainer{
-    background-color: white, .5 opacity;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-
+    
     .amiiboCard{
-      border: 1px solid red;
-      width: 19%;
-        img {
+      background-color: rgba(255, 255, 255, 0.7);
+      // border: 1px solid red;
+      border-radius: 1rem;
+      width: 20%;
+      margin: 1rem;
+      box-shadow: 5px 5px 15px;
+
+      img {
         width: 50%;
       }
     }
