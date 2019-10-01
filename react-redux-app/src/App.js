@@ -12,6 +12,7 @@ import { Route } from 'react-router-dom';
 //import series components
 import SuperMarioBros from './components/Series/SuperMarioBros'
 import EightBitMario from './components/Series/8-bit-Mario';
+import SuperSmashBros from './components/Series/SuperSmashBros';
 
 
 function App() {
@@ -56,6 +57,14 @@ function App() {
         path='/8-bit-mario' 
         render={props => 
           <EightBitMario {...props} 
+            amiiboList={amiiboList} 
+          />
+        } 
+      />
+      <Route 
+        path='/super-smash-bros' 
+        render={props => 
+          <SuperSmashBros {...props} 
             amiiboList={amiiboList} 
           />
         } 
