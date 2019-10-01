@@ -1,3 +1,5 @@
+@import './components/mixins/mixins.scss';
+
 #root{
   width: 100%;
 }
@@ -40,6 +42,37 @@
       text-shadow: 1px 1px 1px red;
       margin-top: 10rem;
     }
+  }
+
+  .categoryHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    #pressMe{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 25%;
+      height: 20%;
+      padding: 1rem;
+      animation: fadeInLeft 1s infinite;
+      
+      h1{
+        font-size: 3rem;
+      }
+      
+      img{
+        width: 25%;
+      }
+    }
+  }
+
+
+  #cardTitle{
+    width: 25%;
   }
 
   .cardContainer{
