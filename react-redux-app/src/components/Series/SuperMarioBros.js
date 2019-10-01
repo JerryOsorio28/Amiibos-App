@@ -1,40 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import SuperMario from './SuperMario';
+const SuperMarioBros = props => {
 
-const SuperMarioBros = () => {
+    const [array, setArray] = useState([])
+
+    // console.log('from SuperMarioBros', props)
     
-    const amiiboList = useSelector(state => state.amiiboList)
-    console.log(amiiboList)
+    const dataSorter = () => {
+        let gameSeries = [];
 
-    const dispatch = useDispatch();
-
-    const findSuperMario = () => {
-        {amiiboList.map(amiibo => {
-            if(amiibo.gameSeries === 'Super Mario'){
-                return <SuperMario amiibo={amiibo}/>
+        props.amiiboList.data.forEach(amiibos => {
+            if(amiibos.amiiboSeries === "Super Mario Bros."){
+                gameSeries.push(amiibos)
             }
-        })}
+        })
+        setArray(gameSeries)
+        console.log('from SuperMarioBros', gameSeries)
     }
 
     return (
         <>
-        <button onClick ={() => dispatch(getData())}>Get Started</button>
+            <button onClick={dataSorter}>testing</button>
+                {array.map(amiibo => (
+                    <div className='amiiboCard'>
+                        <h2>{amiibo.character}</h2>
+                        <img src={amiibo.image} />
+                        <h3>Amiibo Series: {amiibo.amiiboSeries}</h3>
+                        <p>Game Series: {amiibo.gameSeries}</p>
+                        <p>Type: {amiibo.type}</p>
+                    </div>
+        
+                ))}
         </>
     )
 }
 
 export default SuperMarioBros;
-
-/*
-<button onClick={() => >
-                {amiiboList.isLoading ? (
-                <Loader
-                type="ThreeDots"
-                color="#00BFFF"
-                height={15}
-                width={100}
-                /> 
-                ) : ("Super Mario Bros.")}
-            </button>
-*/

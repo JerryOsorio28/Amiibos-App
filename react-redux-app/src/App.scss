@@ -1,15 +1,20 @@
-.App{
-  font-family: "Arial Black", Gadget, sans-serif
-
+#root{
+  width: 100%;
 }
 
-.homeContainer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 
-  h1 {
+.App{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  width: 100%;
+  text-align: center;
+  
+  .homeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    h1 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -21,21 +26,36 @@
     margin-bottom: 0;
   }
 
-  h4{
-    margin-top: .5rem;
+    h4{
+      margin-top: .5rem;
+    }
+    
+    button{
+      border: 5px solid red;
+      border-radius: 5rem;
+      padding: .5rem;
+      font-size: 1.5rem;
+      width: 40%;
+      background-color: gray;
+      color: white;
+      text-shadow: 1px 1px 1px red;
+      margin-top: 10rem;
+    }
   }
 
-  button{
-    border: 5px solid red;
-    border-radius: 5rem;
-    padding: .5rem;
-    font-size: 1.5rem;
-    width: 40%;
-    background-color: gray;
-    color: white;
-    text-shadow: 1px 1px 1px red;
-    margin-top: 10rem;
-  }
+  .cardContainer{
+    background-color: white, .5 opacity;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
+
+    .amiiboCard{
+      border: 1px solid red;
+      width: 19%;
+        img {
+        width: 50%;
+      }
+    }
+  }
 }
-
