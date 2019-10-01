@@ -44,11 +44,22 @@
     }
   }
 
+  .gameSeries{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+
   .categoryHeader {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
+    #marioImg{
+      width: 10%;
+    }
 
     #pressMe{
       display: flex;
@@ -58,14 +69,18 @@
       width: 25%;
       height: 20%;
       padding: 1rem;
+      
       animation: fadeInLeft 1s infinite;
       
       h1{
         font-size: 3rem;
+        text-shadow: 4px -2px 0px black;
+        color: #FF0000;
       }
       
       img{
         width: 25%;
+        text-shadow: 4px -2px 0px black;
       }
     }
   }

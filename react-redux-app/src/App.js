@@ -11,13 +11,14 @@ import { Route } from 'react-router-dom';
 
 //import series components
 import SuperMarioBros from './components/Series/SuperMarioBros'
+import EightBitMario from './components/Series/8-bit-Mario';
 
 
 function App() {
 
   const [amiiboList, setAmiiboList] = useState([]);
 
-    // console.log('App', amiiboList)
+    console.log('App', amiiboList)
 
     useEffect(() => {
         
@@ -35,13 +36,27 @@ function App() {
   return (
     <div className="App">
       <Route exact path='/' component={Home} />
-      <Route exact path='/amiibo-list' component={AmiiboList} />
+      <Route 
+        path='/amiibo-list' 
+        render={props => 
+          <AmiiboList {...props} 
+            amiiboList={amiiboList} 
+          />
+        } 
+      />
       <Route 
         path='/super-mario-bros' 
         render={props => 
           <SuperMarioBros {...props} 
             amiiboList={amiiboList} 
-            setAmiiboList={setAmiiboList}
+          />
+        } 
+      />
+      <Route 
+        path='/8-bit-mario' 
+        render={props => 
+          <EightBitMario {...props} 
+            amiiboList={amiiboList} 
           />
         } 
       />
