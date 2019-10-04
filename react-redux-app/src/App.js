@@ -13,6 +13,9 @@ import { Route } from 'react-router-dom';
 import SuperMarioBros from './components/Series/SuperMarioBros'
 import EightBitMario from './components/Series/8-bit-Mario';
 import SuperSmashBros from './components/Series/SuperSmashBros';
+import YoshiWoollyWorld from './components/Series/Yoshi-woolly-world';
+import Skylanders from './components/Series/Skylanders';
+import LegendOfZelda from './components/Series/LegendOfZelda';
 
 
 function App() {
@@ -65,6 +68,30 @@ function App() {
         path='/super-smash-bros' 
         render={props => 
           <SuperSmashBros {...props} 
+            amiiboList={amiiboList} 
+          />
+        } 
+      />
+      <Route 
+        path='/yoshi-woolly-world' 
+        render={props => 
+          <YoshiWoollyWorld {...props} 
+            amiiboList={amiiboList} 
+          />
+        } 
+      />
+      <Route 
+        path='/skylanders' 
+        render={props => 
+          <Skylanders {...props} 
+            amiiboList={amiiboList} 
+          />
+        } 
+      />
+      <Route 
+        path='/legend-of-zelda' 
+        render={props => 
+          <LegendOfZelda {...props} 
             amiiboList={amiiboList} 
           />
         } 
