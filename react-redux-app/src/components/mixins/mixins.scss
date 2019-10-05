@@ -3,3 +3,19 @@
     50% { transform: translate(0px, 0px) }
     100% { transform: translate(10px, 0px) }
     } 
+
+@mixin buttons {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5rem;
+    font-size: 1rem;
+    font-weight: 800;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    width: 15rem;
+    height: 4rem;
+    }

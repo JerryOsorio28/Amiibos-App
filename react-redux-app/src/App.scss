@@ -53,6 +53,83 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 1rem;
+
+    a {
+      @include buttons;
+    }
+
+    #superMarioBros{
+      background-image: url('http://ichef.bbci.co.uk/news/976/cpsprodpb/FDAC/production/_89704946_mario976.jpg');
+      background-size: cover;
+      background-position: .4rem;
+      background-color: #FF0000; 
+    }
+    #8BitMario{
+      background-image: url('http://musings.northerngrove.com/wp-content/uploads/2013/06/smb-capture.gif');
+      background-size: cover;
+      background-position: 1rem; 
+      border: 1px solid red;
+    }
+    #superSmashBros{
+      border: 1px solid red;
+    }
+    #yoshiWoollyWorld{
+
+    }
+    #skylanders{
+
+    }
+    #legendOfZelda{
+
+    }
+    #animalCrossing{
+
+    }
+    #metroid{
+
+    }
+    #splatoon{
+
+    }
+    #marioSportsSuperstars{
+
+    }
+    #pokemon{
+
+    }
+    #kirby{
+
+    }
+    #boxBoy{
+
+    }
+    #fireEmblem{
+
+    }
+    #chibiRobo{
+
+    }
+    #megaMan{
+
+    }
+    #monsterHunter{
+
+    }
+    #shovelKnight{
+
+    }
+    #pikmin{
+
+    }
+    #mblPowerPros{
+
+    }
+    #diablo{
+
+    }
+    #others{
+
+    }
   }
 
   .categoryHeader {
