@@ -18,7 +18,7 @@ const Home = (props) => {
             />
             </h1>
             <h4>A collection of amiibos</h4>
-            <button onClick={clickHandler}>Open List</button>
+            <button onClick={clickHandler}>Open Collection</button>
         </div>
     )
 };

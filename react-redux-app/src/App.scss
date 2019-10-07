@@ -19,7 +19,6 @@
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      border: 5px solid red;
       border-radius: 5rem;
       padding: 1rem;
       width: 25rem;
@@ -27,24 +26,35 @@
       margin-bottom: 0;
       background-color: #FFFFFF;
       text-shadow: 1px 1px 2px black;
+      box-shadow: 1px 1px 2px black;
     
   }
 
     h4{
       margin-top: 1rem;
+      background-color: #FFFFFF;
+      border-radius: 5rem; 
+      padding: .5rem 1rem;
+      box-shadow: 1px 1px 2px black;
     }
     
     button{
-      border: 5px solid red;
       border-radius: 5rem;
       padding: .5rem;
       font-size: 1.5rem;
-      width: 40%;
+      width: 30%;
       background-color: gray;
       color: red;
       text-shadow: 1px 1px 2px black;
-      margin-top: 10rem;
+      margin-top: 20rem;
       background-color: #FFFFFF;
+      box-shadow: 1px 1px 2px black;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: all .2s ease-in-out;
+      }
+      transition: all .2s ease-out;
     }
   }
 
