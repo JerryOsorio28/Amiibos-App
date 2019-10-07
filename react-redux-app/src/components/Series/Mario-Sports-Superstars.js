@@ -16,6 +16,9 @@ const MarioSportsSuperstars = props => {
         })
         setArray(gameSeries)
         console.log('from MarioSportsSuperstars', gameSeries)
+
+        let object = document.getElementById('pressMe')
+        object.style.display = 'none';
     }
 
     return (

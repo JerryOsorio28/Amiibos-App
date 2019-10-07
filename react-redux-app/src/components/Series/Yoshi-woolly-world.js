@@ -16,6 +16,9 @@ const YoshiWoollyWorld = props => {
         })
         setArray(gameSeries)
         console.log('from YoshiWoollyWorld', gameSeries)
+
+        let object = document.getElementById('pressMe')
+        object.style.display = 'none';
     }
 
     return (

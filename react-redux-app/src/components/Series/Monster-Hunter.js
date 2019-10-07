@@ -16,6 +16,9 @@ const MonsterHunter = props => {
         })
         setArray(gameSeries)
         console.log('from MonsterHunter', gameSeries)
+
+        let object = document.getElementById('pressMe')
+        object.style.display = 'none';
     }
 
     return (

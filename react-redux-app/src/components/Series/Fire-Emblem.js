@@ -16,6 +16,9 @@ const FireEmblem = props => {
         })
         setArray(gameSeries)
         console.log('from FireEmblem', gameSeries)
+
+        let object = document.getElementById('pressMe')
+        object.style.display = 'none';
     }
 
     return (

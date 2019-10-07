@@ -16,6 +16,9 @@ const BoxBoy = props => {
         })
         setArray(gameSeries)
         console.log('from BoxBoy', gameSeries)
+
+        let object = document.getElementById('pressMe')
+        object.style.display = 'none';
     }
 
     return (

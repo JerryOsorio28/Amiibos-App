@@ -31,8 +31,10 @@ const AnimalCrossing = props => {
             } 
         })
         setArray(figures)
-        
         console.log('from AnimalCrossing', figures)
+
+        let object = document.getElementById('pressMe')
+        object.style.display = 'none';
     }
 
     return (

@@ -16,6 +16,9 @@ const Kirby = props => {
         })
         setArray(gameSeries)
         console.log('from Kirby', gameSeries)
+
+        let object = document.getElementById('pressMe')
+        object.style.display = 'none';
     }
 
     return (

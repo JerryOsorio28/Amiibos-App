@@ -16,6 +16,9 @@ const Pikmin = props => {
         })
         setArray(gameSeries)
         console.log('from Pikmin', gameSeries)
+
+        let object = document.getElementById('pressMe')
+        object.style.display = 'none';
     }
 
     return (

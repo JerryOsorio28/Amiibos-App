@@ -16,6 +16,9 @@ const Diablo = props => {
         })
         setArray(gameSeries)
         console.log('from Diablo', gameSeries)
+
+        let object = document.getElementById('pressMe')
+        object.style.display = 'none';
     }
 
     return (

@@ -19,15 +19,18 @@ const EightBitMario = props => {
         })
         setArray(gameSeries)
         console.log('from EightBitMario', gameSeries)
+
+        let object = document.getElementById('pressMe')
+        object.style.display = 'none';
     }
 
     return (
         <>
             <div className='categoryHeader'>
                 <img id='marioImg' src ={eightBitMarioCharacter}/>
-                <img id='cardTitle' onClick={dataSorter} src ={eightBitMario}/>
+                <img id='cardTitle' onClick={dataSorter} src={eightBitMario}/>
                 <div id='pressMe'>
-                    <img src='https://pngriver.com/wp-content/uploads/2018/04/Download-Left-Arrow-PNG-HD.png' alt=''/>
+                    <img src='https://pngriver.com/wp-content/uploads/2018/04/Download-Left-Arrow-PNG-HD.png'/>
                     <h1>Press Me!</h1>
                 </div>
             </div>

@@ -16,6 +16,9 @@ const Others = props => {
         })
         setArray(gameSeries)
         console.log('from Others', gameSeries)
+
+        let object = document.getElementById('pressMe')
+        object.style.display = 'none';
     }
 
     return (

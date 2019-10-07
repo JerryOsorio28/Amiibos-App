@@ -16,6 +16,9 @@ const PowerPros = props => {
         })
         setArray(gameSeries)
         console.log('from PowerPros', gameSeries)
+
+        let object = document.getElementById('pressMe')
+        object.style.display = 'none';
     }
 
     return (

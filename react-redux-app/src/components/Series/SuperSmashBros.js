@@ -16,6 +16,9 @@ const SuperSmashBros = props => {
         })
         setArray(gameSeries)
         console.log('from SuperSmashBros', gameSeries)
+
+        let object = document.getElementById('pressMe')
+        object.style.display = 'none';
     }
 
     return (

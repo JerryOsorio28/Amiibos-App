@@ -16,6 +16,9 @@ const MegaMan = props => {
         })
         setArray(gameSeries)
         console.log('from MegaMan', gameSeries)
+
+        let object = document.getElementById('pressMe')
+        object.style.display = 'none';
     }
 
     return (

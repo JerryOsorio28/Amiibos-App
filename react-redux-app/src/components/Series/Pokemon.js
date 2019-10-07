@@ -16,6 +16,9 @@ const Pokemon = props => {
         })
         setArray(gameSeries)
         console.log('from Pokemon', gameSeries)
+
+        let object = document.getElementById('pressMe')
+        object.style.display = 'none';
     }
 
     return (

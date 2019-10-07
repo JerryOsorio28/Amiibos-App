@@ -16,6 +16,9 @@ const ChibiRobo = props => {
         })
         setArray(gameSeries)
         console.log('from ChibiRobo', gameSeries)
+
+        let object = document.getElementById('pressMe')
+        object.style.display = 'none';
     }
 
     return (

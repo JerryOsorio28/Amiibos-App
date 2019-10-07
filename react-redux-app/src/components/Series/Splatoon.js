@@ -16,6 +16,9 @@ const Splatoon = props => {
         })
         setArray(gameSeries)
         console.log('from Splatoon', gameSeries)
+
+        let object = document.getElementById('pressMe')
+        object.style.display = 'none';
     }
 
     return (

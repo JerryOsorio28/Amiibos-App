@@ -16,6 +16,9 @@ const LegendOfZelda = props => {
         })
         setArray(gameSeries)
         console.log('from LegendOfZelda', gameSeries)
+
+        let object = document.getElementById('pressMe')
+        object.style.display = 'none';
     }
 
     return (

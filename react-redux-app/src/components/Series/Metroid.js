@@ -16,6 +16,9 @@ const Metroid = props => {
         })
         setArray(gameSeries)
         console.log('from Metroid', gameSeries)
+
+        let object = document.getElementById('pressMe')
+        object.style.display = 'none';
     }
 
     return (
