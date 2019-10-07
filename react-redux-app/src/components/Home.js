@@ -15,6 +15,7 @@ const Home = (props) => {
                 src='https://vignette.wikia.nocookie.net/fantendo/images/3/37/NSMBWii1upMushroom.png/revision/latest?cb=20120809232434' 
                 style={{width: '3rem', height: '3rem'}}
                 alt=''
+                id='life'
             />
             </h1>
             <h4>A collection of amiibos</h4>
