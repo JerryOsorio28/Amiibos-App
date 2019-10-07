@@ -141,37 +141,58 @@
       background-position: .1rem -4rem;
       
     }
+
     #boxBoy{
       background-image: url('./components/Series/images/boxboy/bb-button.webp'); 
       background-size: 70%;
       background-position: 2rem .1rem;
     }
+    
     #fireEmblem{
-
+      background-image: url('./components/Series/images/Fire-Emblem/FE-button.jpg'); 
+      background-size: cover;
+      background-position: .1rem -.5rem;
     }
+
     #chibiRobo{
-
+      background-image: url('./components/Series/images/Chibi-Robo/CR-button.jpg'); 
+      background-size: cover;
+      background-position: .1rem -3rem;
     }
+    
     #megaMan{
-
+      background-image: url('./components/Series/images/Mega-man/MM-button.png'); 
+      background-size: cover;
+      background-position: .1rem -3rem;
     }
     #monsterHunter{
-
+      background-image: url('./components/Series/images/Monster-Hunter/MH-button.png'); 
+      background-size: cover;
+      background-position: 0 -3rem;
     }
     #shovelKnight{
-
+      background-image: url('./components/Series/images/Shovel-Knight/SK-button.jpg'); 
+      background-size: cover;
+      background-position: 0 -2rem;
     }
     #pikmin{
-
+      background-image: url('./components/Series/images/Pikmin/Pikmin-button.jpg'); 
+      background-size: 120%;
+      background-position: -1rem -2rem;
+      
     }
     #mblPowerPros{
-
+      background-image: url('./components/Series/images/MLB-power-pros/MBL-PP-button.jpg'); 
+      background-size: cover;
+      background-position: -1rem -3rem;
     }
     #diablo{
-
+      background-image: url('./components/Series/images/Diablo/diablo-button.jpg'); 
+      background-size: cover;
+      background-position: -1rem -.5rem;
     }
     #others{
-
+      background-color: #FFFFFF;
     }
   }
 
