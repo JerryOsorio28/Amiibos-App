@@ -32,6 +32,7 @@ import ShovelKnight from './components/Series/Shovel-Knight';
 import Pikmin from './components/Series/Pikmin';
 import PowerPros from './components/Series/Power-Pros';
 import Diablo from './components/Series/Diablo';
+import Search from './components/Search';
 
 
 function App() {
@@ -56,6 +57,14 @@ function App() {
   return (
     <div className="App">
       <Route exact path='/' component={Home} />
+      <Route 
+        path='/search' 
+        render={props => 
+          <Search {...props} 
+            amiiboList={amiiboList} 
+          />
+        } 
+      />
       <Route 
         path='/amiibo-list' 
         render={props => 

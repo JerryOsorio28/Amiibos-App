@@ -11,6 +11,15 @@
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
+@mixin grow {
+    &:hover {
+        box-shadow: 2px 2px 15px white;
+        transform: scale(1.1);
+        transition: all .2s ease-in-out;
+    }
+    transition: all .2s ease-out;
+}
     
     @mixin buttons {
     text-decoration: none;
@@ -18,7 +27,7 @@
     display: flex;
     justify-content: center;
     border: 1px solid black;
-    border-radius: 5rem;
+    border-radius: 2rem;
     font-size: 1rem;
     font-weight: 800;
     align-items: center;
