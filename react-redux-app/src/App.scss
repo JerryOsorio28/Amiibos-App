@@ -72,7 +72,7 @@
       background-image: url('./components/Series/images/superMarioBros/smb-button.jpg');
       background-size: cover;
       background-position: .4rem;
-      background-color: #FF0000; 
+      @include buttonsFont;
     }
 
     #eightBitMario{
@@ -80,6 +80,7 @@
       background-size: cover;
       background-size: 70%;
       background-position: 1rem;
+      @include buttonsFont;
     }
 
     #superSmashBros{
@@ -87,58 +88,68 @@
       background-size: cover;
       background-size: 80%;
       background-position: 1rem;
+      @include buttonsFont;
     }
 
     #yoshiWoollyWorld{
       background-image: url('./components/Series/images/Yoshi-wolly-world/yww-button.png'); 
       background-size: cover;
       background-position: 1rem;
+      @include buttonsFont;
     }
     
     #skylanders{
       background-image: url('./components/Series/images/Skylanders/skylanders-button.jpg'); 
       background-size: cover;
       background-position: .5rem;
+      @include buttonsFont;
     }
     
     #legendOfZelda{
       background-image: url('./components/Series/images/Zelda/Zelda-button.png'); 
       background-size: cover;
       background-position: .1rem -4rem;
+      @include buttonsFont;
       
     }
     #animalCrossing{
       background-image: url('./components/Series/images/Animal-Crossing/AC-button.png'); 
       background-size: cover;
       background-position: .5rem;
+      @include buttonsFont;
       
     }
     #metroid{
       background-image: url('./components/Series/images/Metroid/metroid-button.png'); 
       background-size: 90%;
       background-position: -1rem -1.5rem;
+      @include buttonsFont;
       
     }
     #splatoon{
       background-image: url('./components/Series/images/splatoon/splatoon-button.jfif'); 
       background-size: cover;
+      @include buttonsFont;
     }
     #marioSportsSuperstars{
       background-image: url('./components/Series/images/mario-sports-superstars/mss-button.jpg'); 
       background-size: cover;
       background-position: .1rem;
+      @include buttonsFont;
       
     }
     #pokemon{
       background-image: url('./components/Series/images/Pokemon/pokemon-button.jpg'); 
       background-size: cover;
       background-position: .1rem -4.5rem;
+      @include buttonsFont;
       
     }
     #kirby{
       background-image: url('./components/Series/images/Kirby/kirby-button.png'); 
       background-size: cover;
       background-position: .1rem -4rem;
+      @include buttonsFont;
       
     }
 
@@ -146,53 +157,63 @@
       background-image: url('./components/Series/images/boxboy/bb-button.webp'); 
       background-size: 70%;
       background-position: 2rem .1rem;
+      @include buttonsFont;
     }
     
     #fireEmblem{
       background-image: url('./components/Series/images/Fire-Emblem/FE-button.jpg'); 
       background-size: cover;
       background-position: .1rem -.5rem;
+      @include buttonsFont;
     }
 
     #chibiRobo{
       background-image: url('./components/Series/images/Chibi-Robo/CR-button.jpg'); 
       background-size: cover;
       background-position: .1rem -3rem;
+      @include buttonsFont;
     }
     
     #megaMan{
       background-image: url('./components/Series/images/Mega-man/MM-button.png'); 
       background-size: cover;
       background-position: .1rem -3rem;
+      @include buttonsFont;
     }
     #monsterHunter{
       background-image: url('./components/Series/images/Monster-Hunter/MH-button.png'); 
       background-size: cover;
       background-position: 0 -3rem;
+      @include buttonsFont;
     }
     #shovelKnight{
       background-image: url('./components/Series/images/Shovel-Knight/SK-button.jpg'); 
       background-size: cover;
       background-position: 0 -2rem;
+      @include buttonsFont;
     }
     #pikmin{
       background-image: url('./components/Series/images/Pikmin/Pikmin-button.jpg'); 
       background-size: 120%;
       background-position: -1rem -2rem;
+      @include buttonsFont;
       
     }
     #mblPowerPros{
       background-image: url('./components/Series/images/MLB-power-pros/MBL-PP-button.jpg'); 
       background-size: cover;
       background-position: -1rem -3rem;
+      @include buttonsFont;
     }
     #diablo{
       background-image: url('./components/Series/images/Diablo/diablo-button.jpg'); 
       background-size: cover;
       background-position: -1rem -.5rem;
+      @include buttonsFont;
     }
     #others{
       background-color: #FFFFFF;
+      @include buttonsFont;
     }
   }
 
@@ -232,6 +253,24 @@
 
   #cardTitle{
     width: 25%;
+  }
+
+  #canYouGuessButton {
+    border-radius: 5rem;
+    padding: .5rem;
+    font-size: 1.5rem;
+    width: 20%;
+    background-color: gray;
+    color: red;
+    text-shadow: 1px 1px 2px black;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 2px black;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: all .2s ease-in-out;
+    }
+    transition: all .2s ease-out;
   }
 
   .cardContainer{
