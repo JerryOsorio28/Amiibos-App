@@ -32,22 +32,17 @@ const AnimalCrossing = props => {
         })
         setArray(figures)
         console.log('from AnimalCrossing', figures)
-
-        let object = document.getElementById('pressMe')
-        object.style.display = 'none';
     }
 
     return (
         <>
             <div className='categoryHeader'>
                 <img id='cardTitle' src ='https://animal-crossing.com/assets/img/home/logo.png' alt='Animal Crossing Title'/>
-                <div id='pressMe'>
-                    <img src='https://pngriver.com/wp-content/uploads/2018/04/Download-Left-Arrow-PNG-HD.png' alt=''/>
-                    <h1>Press Me!</h1>
-                </div>
             </div>
-                <button onClick={cards}>Cards Collection</button>
-                <button onClick={figures}>Figure Collection</button>
+                <div className='buttonsContainter'>
+                    <button className='defaultButtons' onClick={cards}>Cards Collection</button>
+                    <button className='defaultButtons' onClick={figures}>Figure Collection</button>
+                </div>
             <div className='cardContainer'>
                 {array.map(amiibo => (
                     <div className='amiiboCard'>

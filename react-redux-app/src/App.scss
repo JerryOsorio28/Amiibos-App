@@ -250,27 +250,19 @@
     }
   }
 
+  .buttonsContainter {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
 
   #cardTitle{
     width: 25%;
+    margin: 1rem;
   }
 
-  #canYouGuessButton {
-    border-radius: 5rem;
-    padding: .5rem;
-    font-size: 1.5rem;
-    width: 20%;
-    background-color: gray;
-    color: red;
-    text-shadow: 1px 1px 2px black;
-    background-color: #FFFFFF;
-    box-shadow: 1px 1px 2px black;
-
-    &:hover {
-      transform: scale(1.1);
-      transition: all .2s ease-in-out;
-    }
-    transition: all .2s ease-out;
+  .defaultButtons {
+    @include defaultButtons;
   }
 
   .cardContainer{
@@ -280,11 +272,11 @@
     
     .amiiboCard{
       background-color: rgba(255, 255, 255, 0.7);
-      // border: 1px solid red;
       border-radius: 1rem;
       width: 20%;
       margin: 1rem;
       box-shadow: 5px 5px 15px;
+      animation: fadeIn .5s;
 
       img {
         width: 50%;

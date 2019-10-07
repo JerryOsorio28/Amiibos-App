@@ -24,7 +24,7 @@ const Others = props => {
     return (
         <>
             <div className='categoryHeader'>
-                <button id='canYouGuessButton' onClick={dataSorter}>Can you guess?</button>
+                <button className='defaultButtons' onClick={dataSorter}>Can you guess?</button>
                 <div id='pressMe'>
                     <img src='https://pngriver.com/wp-content/uploads/2018/04/Download-Left-Arrow-PNG-HD.png' alt=''/>
                     <h1>Press Me!</h1>
