@@ -69,49 +69,82 @@
     }
 
     #superMarioBros{
-      background-image: url('http://ichef.bbci.co.uk/news/976/cpsprodpb/FDAC/production/_89704946_mario976.jpg');
+      background-image: url('./components/Series/images/superMarioBros/smb-button.jpg');
       background-size: cover;
       background-position: .4rem;
       background-color: #FF0000; 
     }
-    #8BitMario{
-      background-image: url('http://musings.northerngrove.com/wp-content/uploads/2013/06/smb-capture.gif');
+
+    #eightBitMario{
+      background-image: url('./components/Series/images/8-Bit-Mario/smb-button.png'); 
       background-size: cover;
-      background-position: 1rem; 
-      border: 1px solid red;
+      background-size: 70%;
+      background-position: 1rem;
     }
+
     #superSmashBros{
-      border: 1px solid red;
+      background-image: url('./components/Series/images/SMB/smb-button.jpg'); 
+      background-size: cover;
+      background-size: 80%;
+      background-position: 1rem;
     }
+
     #yoshiWoollyWorld{
-
+      background-image: url('./components/Series/images/Yoshi-wolly-world/yww-button.png'); 
+      background-size: cover;
+      background-position: 1rem;
     }
+    
     #skylanders{
-
+      background-image: url('./components/Series/images/Skylanders/skylanders-button.jpg'); 
+      background-size: cover;
+      background-position: .5rem;
     }
+    
     #legendOfZelda{
-
+      background-image: url('./components/Series/images/Zelda/Zelda-button.png'); 
+      background-size: cover;
+      background-position: .1rem -4rem;
+      
     }
     #animalCrossing{
-
+      background-image: url('./components/Series/images/Animal-Crossing/AC-button.png'); 
+      background-size: cover;
+      background-position: .5rem;
+      
     }
     #metroid{
-
+      background-image: url('./components/Series/images/Metroid/metroid-button.png'); 
+      background-size: 90%;
+      background-position: -1rem -1.5rem;
+      
     }
     #splatoon{
-
+      background-image: url('./components/Series/images/splatoon/splatoon-button.jfif'); 
+      background-size: cover;
     }
     #marioSportsSuperstars{
-
+      background-image: url('./components/Series/images/mario-sports-superstars/mss-button.jpg'); 
+      background-size: cover;
+      background-position: .1rem;
+      
     }
     #pokemon{
-
+      background-image: url('./components/Series/images/Pokemon/pokemon-button.jpg'); 
+      background-size: cover;
+      background-position: .1rem -4.5rem;
+      
     }
     #kirby{
-
+      background-image: url('./components/Series/images/Kirby/kirby-button.png'); 
+      background-size: cover;
+      background-position: .1rem -4rem;
+      
     }
     #boxBoy{
-
+      background-image: url('./components/Series/images/boxboy/bb-button.webp'); 
+      background-size: 70%;
+      background-position: 2rem .1rem;
     }
     #fireEmblem{
 

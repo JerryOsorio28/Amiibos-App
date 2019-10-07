@@ -6,7 +6,7 @@ const AmiiboList = () => {
     return(
         <div className='gameSeries'>
             <Link to ='super-mario-bros' id= 'superMarioBros'>Super Mario Bros.</Link>
-            <Link to ='8-bit-mario' id= '8BitMario'>8-Bit Mario</Link>
+            <Link to ='8-bit-mario' id= 'eightBitMario'>8-Bit Mario</Link>
             <Link to ='super-smash-bros' id= 'superSmashBros'>Super Smash Bros.</Link>
             <Link to ='yoshi-woolly-world' id= 'yoshiWoollyWorld'>Yoshi's Woolly World</Link>
             <Link to ='skylanders' id= 'skylanders'>Skylanders</Link>
