@@ -2,17 +2,35 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 // import a from '../icons/magnifying-glass.png'
 
-const AmiiboList = () => {
+const AmiiboList = props => {
+    // console.log('From the AmiiboList', props.amiiboList.data)
 
-    const [search, setSearch] = useState()
+    const [search, setSearch] = useState({
+        name: ''
+    })
 
-    const searching = () => {
+    console.log('search state', search)
+
+    
+    const updateSearch = (e) => {
+        // console.log('from change handler', e.target.value)
+        setSearch({...search, [e.target.name]: e.target.value})
+
+        let object = document.getElementsByClassName('gameSeries')
+            object.style.display = 'none';
+    }
         
+    const removeCategories = () => {
+        let object = document.getElementsByClassName('gameSeries')
+            object[0].style.display = 'none';
     }
 
-    const changeHandler = (e) => {
 
-    }
+    // let filteredAmiibos = props.amiiboList.data.filter(
+    //     (amiibo) => {
+    //         return amiibo.name.indexOf(search.name) !== -1;
+    //     }
+    //     );
 
     return(
         <> 
@@ -20,12 +38,25 @@ const AmiiboList = () => {
                 <input 
                     id='searchAmiiboBar'
                     name='name'
-                    onChange={changeHandler} 
-                    type='text' 
+                    onChange={updateSearch} 
+                    type='text'
+                    value={search.name}
+                    onClick={removeCategories}
                 />
                 <img id='searchIcon' src='https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png'/>
             </div>
-            <div className='gameSeries'>
+                {/* {filteredAmiibos.map(amiibo => {
+                    return  <div>
+                                <div className='amiiboCard'>
+                                    <h1>{amiibo.character}</h1>
+                                    <img src={amiibo.image} />
+                                    <h4>Amiibo Series: {amiibo.amiiboSeries}</h4>
+                                    <p>Game Series: {amiibo.gameSeries}</p>
+                                    <p>Type: {amiibo.type}</p>
+                                </div>
+                            </div> 
+                })} */}
+                <div className='gameSeries'>
                 <Link to ='super-mario-bros' id= 'superMarioBros'>Super Mario Bros.</Link>
                 <Link to ='8-bit-mario' id= 'eightBitMario'>8-Bit Mario</Link>
                 <Link to ='super-smash-bros' id= 'superSmashBros'>Super Smash Bros.</Link>
