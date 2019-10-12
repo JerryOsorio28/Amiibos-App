@@ -23,8 +23,9 @@ const MonsterHunter = props => {
 
     return (
         <>
+        <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle' onClick={dataSorter} src ='https://media.alienwarearena.com/media/e14e32b40e10a888a6c41820e43f149a.png'/>
+                <img id='cardTitle'  src ='https://media.alienwarearena.com/media/e14e32b40e10a888a6c41820e43f149a.png'/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>
@@ -41,7 +42,7 @@ const MonsterHunter = props => {
                     </div>
                 ))}
             </div>
-        
+        </div>
         </>
     )
 }

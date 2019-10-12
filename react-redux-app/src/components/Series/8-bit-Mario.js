@@ -26,9 +26,10 @@ const EightBitMario = props => {
 
     return (
         <>
+        <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
                 <img id='marioImg' src ={eightBitMarioCharacter}/>
-                <img id='cardTitle' onClick={dataSorter} src={eightBitMario}/>
+                <img id='cardTitle'  src={eightBitMario}/>
                 <div id='pressMe'>
                     <h1>Press Me!</h1>
                 </div>
@@ -44,7 +45,7 @@ const EightBitMario = props => {
                     </div>
                 ))}
             </div>
-        
+        </div>
         </>
     )
 }

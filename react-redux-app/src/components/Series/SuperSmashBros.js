@@ -23,8 +23,9 @@ const SuperSmashBros = props => {
 
     return (
         <>
+        <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle' onClick={dataSorter} src ='https://www.ssbwiki.com/images/b/b6/Super_Smash_Bros._for_Nintendo_Switch.svg'/>
+                <img id='cardTitle'  src ='https://www.ssbwiki.com/images/b/b6/Super_Smash_Bros._for_Nintendo_Switch.svg'/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>
@@ -41,7 +42,7 @@ const SuperSmashBros = props => {
                     </div>
                 ))}
             </div>
-        
+        </div>
         </>
     )
 }

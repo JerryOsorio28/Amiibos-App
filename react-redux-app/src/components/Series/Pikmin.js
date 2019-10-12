@@ -23,8 +23,9 @@ const Pikmin = props => {
 
     return (
         <>
+        <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle' onClick={dataSorter} src ='https://www.ssbwiki.com/images/thumb/2/21/PikminLogo.png/1200px-PikminLogo.png'/>
+                <img id='cardTitle'  src ='https://www.ssbwiki.com/images/thumb/2/21/PikminLogo.png/1200px-PikminLogo.png'/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>
@@ -41,7 +42,7 @@ const Pikmin = props => {
                     </div>
                 ))}
             </div>
-        
+        </div>
         </>
     )
 }

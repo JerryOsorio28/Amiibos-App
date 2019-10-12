@@ -23,8 +23,9 @@ const Pokemon = props => {
 
     return (
         <>
+        <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle' onClick={dataSorter} src ='https://www.freeiconspng.com/uploads/pokemon-png-23.png'/>
+                <img id='cardTitle'  src ='https://www.freeiconspng.com/uploads/pokemon-png-23.png'/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>
@@ -41,7 +42,7 @@ const Pokemon = props => {
                     </div>
                 ))}
             </div>
-        
+        </div>
         </>
     )
 }

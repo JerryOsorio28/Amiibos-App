@@ -23,8 +23,9 @@ const Others = props => {
 
     return (
         <>
+        <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <button className='defaultButtons' onClick={dataSorter}>Can you guess?</button>
+                <button className='defaultButtons' >Can you guess?</button>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>
@@ -41,7 +42,7 @@ const Others = props => {
                     </div>
                 ))}
             </div>
-        
+        </div>
         </>
     )
 }

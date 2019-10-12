@@ -23,8 +23,9 @@ const LegendOfZelda = props => {
 
     return (
         <>
+        <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle' onClick={dataSorter} src ='https://gamepedia.cursecdn.com/zelda_gamepedia_en/thumb/d/d2/ZELDA_logo_3D_gen.png/400px-ZELDA_logo_3D_gen.png?version=f47c1f4b6220c30d6d6603aceb58d152'/>
+                <img id='cardTitle'  src ='https://gamepedia.cursecdn.com/zelda_gamepedia_en/thumb/d/d2/ZELDA_logo_3D_gen.png/400px-ZELDA_logo_3D_gen.png?version=f47c1f4b6220c30d6d6603aceb58d152'/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>
@@ -41,7 +42,7 @@ const LegendOfZelda = props => {
                     </div>
                 ))}
             </div>
-        
+        </div>
         </>
     )
 }

@@ -23,8 +23,9 @@ const SuperMarioBros = props => {
 
     return (
         <>
-            <div className='categoryScene'>
-                <div onClick={dataSorter} className='categoryHeader'>
+        <div className='categoryScene' onClick={dataSorter}>
+            <div className='categoryScene' onClick={dataSorter}>
+                <div  className='categoryHeader'>
                     <img id='cardTitle' src ='https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Mario_Series_Logo.svg/1200px-Mario_Series_Logo.svg.png'/>
                     <div id='pressMe'>
                         <h1>Press Me!</h1>
@@ -42,6 +43,7 @@ const SuperMarioBros = props => {
                     ))}
                 </div>
             </div>
+        </div>
         </>
     )
 }

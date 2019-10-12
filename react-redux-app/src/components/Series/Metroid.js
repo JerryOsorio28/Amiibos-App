@@ -23,8 +23,9 @@ const Metroid = props => {
 
     return (
         <>
+        <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle' onClick={dataSorter} src ='https://i.pinimg.com/originals/5d/8e/d7/5d8ed76a74d8df428bf2f152f223032d.png'/>
+                <img id='cardTitle'  src ='https://i.pinimg.com/originals/5d/8e/d7/5d8ed76a74d8df428bf2f152f223032d.png'/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>
@@ -41,7 +42,7 @@ const Metroid = props => {
                     </div>
                 ))}
             </div>
-        
+        </div>
         </>
     )
 }

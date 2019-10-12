@@ -23,8 +23,9 @@ const Kirby = props => {
 
     return (
         <>
+        <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle' onClick={dataSorter} src ='https://cdn.freebiesupply.com/logos/thumbs/2x/kirby-4-logo.png'/>
+                <img id='cardTitle'  src ='https://cdn.freebiesupply.com/logos/thumbs/2x/kirby-4-logo.png'/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>
@@ -41,7 +42,7 @@ const Kirby = props => {
                     </div>
                 ))}
             </div>
-        
+        </div>
         </>
     )
 }

@@ -23,8 +23,9 @@ const Diablo = props => {
 
     return (
         <>
+        <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle' onClick={dataSorter} src ='http://pngimg.com/uploads/diablo/diablo_PNG67.png'/>
+                <img id='cardTitle'  src ='http://pngimg.com/uploads/diablo/diablo_PNG67.png'/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>
@@ -41,7 +42,7 @@ const Diablo = props => {
                     </div>
                 ))}
             </div>
-        
+        </div>
         </>
     )
 }

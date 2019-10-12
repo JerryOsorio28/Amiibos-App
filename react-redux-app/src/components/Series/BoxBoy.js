@@ -23,8 +23,9 @@ const BoxBoy = props => {
 
     return (
         <>
+        <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle' onClick={dataSorter} src ='https://i.imgur.com/l9Z4bw0.png'/>
+                <img id='cardTitle'  src ='https://i.imgur.com/l9Z4bw0.png'/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>
@@ -41,7 +42,7 @@ const BoxBoy = props => {
                     </div>
                 ))}
             </div>
-        
+        </div>
         </>
     )
 }

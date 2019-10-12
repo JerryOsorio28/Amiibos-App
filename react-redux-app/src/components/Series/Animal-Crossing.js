@@ -36,6 +36,7 @@ const AnimalCrossing = props => {
 
     return (
         <>
+        <div className='categoryScene'>
             <div className='categoryHeader'>
                 <img id='cardTitle' src ='https://animal-crossing.com/assets/img/home/logo.png' alt='Animal Crossing Title'/>
             </div>
@@ -54,7 +55,7 @@ const AnimalCrossing = props => {
                     </div>
                 ))}
             </div>
-        
+        </div>
         </>
     )
 }

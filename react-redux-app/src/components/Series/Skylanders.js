@@ -23,8 +23,9 @@ const Skylanders = props => {
 
     return (
         <>
+        <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle' onClick={dataSorter} src ='https://i.pinimg.com/originals/de/c8/4d/dec84df98d656fdabc1d0bbe13a219a9.png'/>
+                <img id='cardTitle'  src ='https://i.pinimg.com/originals/de/c8/4d/dec84df98d656fdabc1d0bbe13a219a9.png'/>
                 <div id='pressMe'>
                     <h1>Press Me!</h1>
                 </div>
@@ -40,7 +41,7 @@ const Skylanders = props => {
                     </div>
                 ))}
             </div>
-        
+        </div>
         </>
     )
 }

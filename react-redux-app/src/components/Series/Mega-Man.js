@@ -23,8 +23,9 @@ const MegaMan = props => {
 
     return (
         <>
+        <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle' onClick={dataSorter} src ='https://upload.wikimedia.org/wikipedia/commons/d/de/Mega_man_logo.png'/>
+                <img id='cardTitle'  src ='https://upload.wikimedia.org/wikipedia/commons/d/de/Mega_man_logo.png'/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>
@@ -41,7 +42,7 @@ const MegaMan = props => {
                     </div>
                 ))}
             </div>
-        
+        </div>
         </>
     )
 }

@@ -23,8 +23,9 @@ const YoshiWoollyWorld = props => {
 
     return (
         <>
+        <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle' onClick={dataSorter} src ='https://i.imgur.com/1Pw1lgh.png'/>
+                <img id='cardTitle'  src ='https://i.imgur.com/1Pw1lgh.png'/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>
@@ -41,7 +42,7 @@ const YoshiWoollyWorld = props => {
                     </div>
                 ))}
             </div>
-        
+        </div>
         </>
     )
 }

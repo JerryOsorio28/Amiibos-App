@@ -23,8 +23,9 @@ const ShovelKnight = props => {
 
     return (
         <>
+        <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle' onClick={dataSorter} src ='https://www.ssbwiki.com/images/thumb/5/54/ShovelKnightLogo.png/1200px-ShovelKnightLogo.png'/>
+                <img id='cardTitle'  src ='https://www.ssbwiki.com/images/thumb/5/54/ShovelKnightLogo.png/1200px-ShovelKnightLogo.png'/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>
@@ -41,7 +42,7 @@ const ShovelKnight = props => {
                     </div>
                 ))}
             </div>
-        
+        </div>
         </>
     )
 }

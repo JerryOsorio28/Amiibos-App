@@ -23,8 +23,9 @@ const Splatoon = props => {
 
     return (
         <>
+        <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle' onClick={dataSorter} src ='https://www.ssbwiki.com/images/c/c3/Splatoon_logo.png'/>
+                <img id='cardTitle'  src ='https://www.ssbwiki.com/images/c/c3/Splatoon_logo.png'/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>
@@ -41,7 +42,7 @@ const Splatoon = props => {
                     </div>
                 ))}
             </div>
-        
+        </div>
         </>
     )
 }

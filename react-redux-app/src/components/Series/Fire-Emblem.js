@@ -23,8 +23,9 @@ const FireEmblem = props => {
 
     return (
         <>
+        <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle' onClick={dataSorter} src ='http://i.imgur.com/oMUlnsV.png'/>
+                <img id='cardTitle'  src ='http://i.imgur.com/oMUlnsV.png'/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>
@@ -41,7 +42,7 @@ const FireEmblem = props => {
                     </div>
                 ))}
             </div>
-        
+        </div>
         </>
     )
 }
