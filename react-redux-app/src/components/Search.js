@@ -16,7 +16,11 @@ const Search = props => {
 
     const filteredAmiibos = props.amiiboList.data.filter(
         (amiibo) => {
-            return amiibo.name.indexOf(search.name) !== -1;
+            if(amiibo){
+                return amiibo.name.toLowerCase().indexOf(search.name.toLowerCase()) !== -1;
+            } else {
+                return <p>Una</p>
+            }
         }
         );
 
