@@ -26,7 +26,6 @@ const Skylanders = props => {
             <div className='categoryHeader'>
                 <img id='cardTitle' onClick={dataSorter} src ='https://i.pinimg.com/originals/de/c8/4d/dec84df98d656fdabc1d0bbe13a219a9.png'/>
                 <div id='pressMe'>
-                    <img src='https://pngriver.com/wp-content/uploads/2018/04/Download-Left-Arrow-PNG-HD.png' alt=''/>
                     <h1>Press Me!</h1>
                 </div>
             </div>

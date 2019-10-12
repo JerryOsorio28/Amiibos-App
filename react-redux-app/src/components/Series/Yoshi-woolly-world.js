@@ -26,7 +26,7 @@ const YoshiWoollyWorld = props => {
             <div className='categoryHeader'>
                 <img id='cardTitle' onClick={dataSorter} src ='https://i.imgur.com/1Pw1lgh.png'/>
                 <div id='pressMe'>
-                    <img src='https://pngriver.com/wp-content/uploads/2018/04/Download-Left-Arrow-PNG-HD.png' alt=''/>
+                    
                     <h1>Press Me!</h1>
                 </div>
             </div>

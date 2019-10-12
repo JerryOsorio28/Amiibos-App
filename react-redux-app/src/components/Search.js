@@ -14,7 +14,7 @@ const Search = props => {
 
     }
 
-    let filteredAmiibos = props.amiiboList.data.filter(
+    const filteredAmiibos = props.amiiboList.data.filter(
         (amiibo) => {
             return amiibo.name.indexOf(search.name) !== -1;
         }

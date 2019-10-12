@@ -26,7 +26,7 @@ const ShovelKnight = props => {
             <div className='categoryHeader'>
                 <img id='cardTitle' onClick={dataSorter} src ='https://www.ssbwiki.com/images/thumb/5/54/ShovelKnightLogo.png/1200px-ShovelKnightLogo.png'/>
                 <div id='pressMe'>
-                    <img src='https://pngriver.com/wp-content/uploads/2018/04/Download-Left-Arrow-PNG-HD.png' alt=''/>
+                    
                     <h1>Press Me!</h1>
                 </div>
             </div>

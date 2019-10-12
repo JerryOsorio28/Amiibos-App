@@ -26,7 +26,6 @@ const PowerPros = props => {
             <div className='categoryHeader'>
                 <img id='cardTitle' onClick={dataSorter} src ='https://vignette.wikia.nocookie.net/logopedia/images/4/40/7817d7f7-0bce-4bdf-b914-4eb40dc19f36.png/revision/latest?cb=20181014024307'/>
                 <div id='pressMe'>
-                    <img src='https://pngriver.com/wp-content/uploads/2018/04/Download-Left-Arrow-PNG-HD.png' alt=''/>
                     <h1>Press Me!</h1>
                 </div>
             </div>

@@ -26,7 +26,7 @@ const MonsterHunter = props => {
             <div className='categoryHeader'>
                 <img id='cardTitle' onClick={dataSorter} src ='https://media.alienwarearena.com/media/e14e32b40e10a888a6c41820e43f149a.png'/>
                 <div id='pressMe'>
-                    <img src='https://pngriver.com/wp-content/uploads/2018/04/Download-Left-Arrow-PNG-HD.png' alt=''/>
+                    
                     <h1>Press Me!</h1>
                 </div>
             </div>

@@ -26,7 +26,7 @@ const MegaMan = props => {
             <div className='categoryHeader'>
                 <img id='cardTitle' onClick={dataSorter} src ='https://upload.wikimedia.org/wikipedia/commons/d/de/Mega_man_logo.png'/>
                 <div id='pressMe'>
-                    <img src='https://pngriver.com/wp-content/uploads/2018/04/Download-Left-Arrow-PNG-HD.png' alt=''/>
+                    
                     <h1>Press Me!</h1>
                 </div>
             </div>

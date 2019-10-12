@@ -41,6 +41,9 @@ const AmiiboList = props => {
                 <Link to ='diablo' id= 'diablo'>Diablo</Link>
                 <Link to ='others' id= 'others'>Others</Link>
             </div>
+            <div className='footer'>
+                <p>© 2019 Jerry Osorio</p>
+            </div>
         </>
     )
 }

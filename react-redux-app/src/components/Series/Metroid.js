@@ -26,7 +26,7 @@ const Metroid = props => {
             <div className='categoryHeader'>
                 <img id='cardTitle' onClick={dataSorter} src ='https://i.pinimg.com/originals/5d/8e/d7/5d8ed76a74d8df428bf2f152f223032d.png'/>
                 <div id='pressMe'>
-                    <img src='https://pngriver.com/wp-content/uploads/2018/04/Download-Left-Arrow-PNG-HD.png' alt=''/>
+                    
                     <h1>Press Me!</h1>
                 </div>
             </div>

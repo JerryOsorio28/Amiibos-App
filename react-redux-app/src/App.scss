@@ -10,23 +10,37 @@
   width: 100%;
   height: 100%;
   text-align: center;
+
+  @media (max-width: 500px){
+    width: 100%;  
+  }
   
   .homeContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
-    h1 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
-      width: 100vw;
-      color: red;
-      background-color: #FFFFFF;
-      text-shadow: 2px 2px 2px black;
-      box-shadow: 3px 3px 10px black;
+
+    @media (max-width: 500px){
+      width: 100%;  
+    }
+
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 100vw;
+    color: red;
+    background-color: #FFFFFF;
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 3px 3px 10px black;
+
+    @media (max-width: 500px){
+      width: 100%;
+      padding: 1rem 0;
+    }
+     
   }
 
   #life {
@@ -53,6 +67,11 @@
       background-color: #FFFFFF;
       box-shadow: 1px 1px 2px black;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 75vw;
+        padding: 1rem 0;
+      }
     }
   }
 
@@ -97,6 +116,12 @@
       background-position: .4rem;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
     }
 
     #eightBitMario{
@@ -106,6 +131,12 @@
       background-position: 1rem;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
     }
 
     #superSmashBros{
@@ -115,6 +146,12 @@
       background-position: 1rem;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
     }
 
     #yoshiWoollyWorld{
@@ -123,6 +160,12 @@
       background-position: 1rem;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
     }
     
     #skylanders{
@@ -131,6 +174,12 @@
       background-position: .5rem;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
     }
     
     #legendOfZelda{
@@ -139,6 +188,12 @@
       background-position: .1rem -4rem;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
       
     }
     #animalCrossing{
@@ -147,6 +202,12 @@
       background-position: .5rem;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
       
     }
     #metroid{
@@ -155,6 +216,12 @@
       background-position: -1rem -1.5rem;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
       
     }
     #splatoon{
@@ -162,6 +229,12 @@
       background-size: cover;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
     }
     #marioSportsSuperstars{
       background-image: url('./components/Series/images/mario-sports-superstars/mss-button.jpg'); 
@@ -169,6 +242,12 @@
       background-position: .1rem;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
       
     }
     #pokemon{
@@ -177,6 +256,12 @@
       background-position: .1rem -4.5rem;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
       
     }
     #kirby{
@@ -185,6 +270,12 @@
       background-position: .1rem -4rem;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
       
     }
 
@@ -194,6 +285,12 @@
       background-position: 2rem .1rem;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
     }
     
     #fireEmblem{
@@ -202,6 +299,12 @@
       background-position: .1rem -.5rem;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
     }
 
     #chibiRobo{
@@ -210,6 +313,12 @@
       background-position: .1rem -3rem;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
     }
     
     #megaMan{
@@ -218,6 +327,12 @@
       background-position: .1rem -3rem;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
     }
     #monsterHunter{
       background-image: url('./components/Series/images/Monster-Hunter/MH-button.png'); 
@@ -225,6 +340,12 @@
       background-position: 0 -3rem;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
     }
     #shovelKnight{
       background-image: url('./components/Series/images/Shovel-Knight/SK-button.jpg'); 
@@ -232,6 +353,12 @@
       background-position: 0 -2rem;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
     }
     #pikmin{
       background-image: url('./components/Series/images/Pikmin/Pikmin-button.jpg'); 
@@ -239,6 +366,12 @@
       background-position: -1rem -2rem;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
       
     }
     #mblPowerPros{
@@ -247,6 +380,12 @@
       background-position: -1rem -3rem;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
     }
     #diablo{
       background-image: url('./components/Series/images/Diablo/diablo-button.jpg'); 
@@ -254,45 +393,87 @@
       background-position: -1rem -.5rem;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
     }
     #others{
       background-color: #FFFFFF;
       @include buttonsFont;
       @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
     }
   }
 
-  .categoryHeader {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  .categoryScene{
 
-    #marioImg{
-      width: 10%;
-    }
+    height: 100%;
 
-    #pressMe{
+    @media (max-width: 500px){
+      display: flex;
+      flex-direction: column;
+     }
+    
+    .categoryHeader {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      width: 25%;
-      height: 20%;
-      padding: 1rem;
-      animation: fadeInLeft 2s infinite;
-      
-      h1{
-        font-size: 3rem;
-        text-shadow: 4px -2px 0px black;
-        color: white;
-      }
-      
-      img{
+
+      @media (max-width: 500px){
+        width: 100%;
+       }
+  
+      #pressMe{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
         width: 25%;
-        text-shadow: 4px -2px 0px black;
+        height: 20%;
+        padding: 1rem;
+        animation: fadeInOut 2s infinite;
+
+        @media (max-width: 500px){
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          width: 100%;
+         }
+        
+        h1{
+          font-size: 3rem;
+          text-shadow: 4px -2px 0px black;
+          color: white;
+  
+          @media (max-width: 500px){
+            font-size: 2rem;
+            margin: 0;
+           }
+        }
+        
+        img{
+          width: 25%;
+          text-shadow: 4px -2px 0px black;
+        }
       }
     }
+  }
+
+  #marioImg{
+    width: 10%;
+
+    @media (max-width: 500px){
+      width: 20%
+     }
   }
 
   .buttonsContainter {
@@ -303,7 +484,13 @@
 
   #cardTitle{
     width: 25%;
+    height: 100%;
     margin: 1rem;
+
+    @media (max-width: 500px){
+      width: 70%;
+      height: 70%;
+     }
   }
 
   .defaultButtons {
@@ -323,6 +510,11 @@
       box-shadow: 5px 5px 15px;
       animation: fadeIn .5s;
 
+      @media (max-width: 500px){
+        width: 40%;
+        padding: .5rem;
+       }
+
       img {
         width: 50%;
       }
@@ -332,5 +524,11 @@
   .amiiboList {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .footer{
+    @include buttonsFont;
+    font-size: 1rem;
+    margin: 1rem;
   }
 }
