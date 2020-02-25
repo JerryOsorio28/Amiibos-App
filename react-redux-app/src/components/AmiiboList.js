@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import a from '../icons/magnifying-glass.png'
+
+// STYLES
+import './AmiiboList.scss'
+import Background from './Series/images/Home/amiibo.png'
 
 const AmiiboList = props => {
     // console.log('From the AmiiboList', props.amiiboList.data)
 
     return(
-        <> 
+        <div id='amiiboListContainer'>
+            <img src={Background} id='listBackground'/> 
             <div className='searchContainer'>
                 <input 
                     id='searchAmiiboBar'
@@ -40,10 +44,8 @@ const AmiiboList = props => {
                 <Link to ='diablo' id= 'diablo'>Diablo</Link>
                 <Link to ='others' id= 'others'>Others</Link>
             </div>
-            <div className='footer'>
-                <p>© 2019 Jerry Osorio</p>
-            </div>
-        </>
+            <p id='footer'>© 2019 Jerry Osorio</p>
+        </div>
     )
 }
 
