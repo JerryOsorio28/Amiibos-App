@@ -1,5 +1,13 @@
 import React from'react';
 
+//IMAGES
+import MarioLife from './Series/images/Home/mario-life.png'
+import Background from './Series/images/Home/amiibo.png'
+import Mario from './Series/images/Home/amiibo-mario.png'
+
+//STYLES
+import './Home.scss'
+
 const Home = (props) => {
 
     const clickHandler = e => {
@@ -9,17 +17,23 @@ const Home = (props) => {
 
     return (
         <div className='homeContainer'>
-            <h1>
-            Nintendo is Life
+            <img src={Background} id='background'/>
             <img 
-                src='https://vignette.wikia.nocookie.net/fantendo/images/3/37/NSMBWii1upMushroom.png/revision/latest?cb=20120809232434' 
-                style={{width: '3rem', height: '3rem'}}
+                src={MarioLife} 
                 alt=''
                 id='life'
             />
-            </h1>
-            <h4>A collection of amiibos</h4>
-            <button onClick={clickHandler}>Open Collection</button>
+            <img 
+                src={MarioLife} 
+                alt=''
+                id='smallerLife'
+            />
+            <img 
+                src={Mario} 
+                alt=''
+                id='mario'
+            />
+            {/* <button onClick={clickHandler}>Open Collection</button> */}
         </div>
     )
 };

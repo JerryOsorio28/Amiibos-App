@@ -15,63 +15,29 @@
     width: 100%;  
   }
   
-  .homeContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    @media (max-width: 500px){
-      width: 100%;  
-    }
-
-  h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    width: 100vw;
-    color: red;
+  h4{
+    margin-top: 1rem;
     background-color: #FFFFFF;
-    text-shadow: 2px 2px 2px black;
-    box-shadow: 3px 3px 10px black;
+    padding: .5rem 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.384);
+  }
+    
+  button{
+    border-radius: 5rem;
+    padding: .5rem;
+    font-size: 1.5rem;
+    width: 30%;
+    background-color: gray;
+    color: red;
+    text-shadow: 1px 1px 2px black;
+    // margin-top: 20rem;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 2px black;
+    @include grow;
 
     @media (max-width: 500px){
-      width: 100%;
+      width: 75vw;
       padding: 1rem 0;
-    }
-     
-  }
-
-  #life {
-    margin-left: 1rem;
-  }
-
-    h4{
-      margin-top: 1rem;
-      background-color: #FFFFFF;
-      border-radius: 5rem; 
-      padding: .5rem 1rem;
-      box-shadow: 1px 1px 2px black;
-    }
-    
-    button{
-      border-radius: 5rem;
-      padding: .5rem;
-      font-size: 1.5rem;
-      width: 30%;
-      background-color: gray;
-      color: red;
-      text-shadow: 1px 1px 2px black;
-      margin-top: 20rem;
-      background-color: #FFFFFF;
-      box-shadow: 1px 1px 2px black;
-      @include grow;
-
-      @media (max-width: 500px){
-        width: 75vw;
-        padding: 1rem 0;
-      }
     }
   }
 
@@ -83,8 +49,7 @@
 
     #searchAmiiboBar{
       width: 20rem;
-      border-top-left-radius: 5rem;
-      border-bottom-left-radius: 5rem;
+      border-radius: 5rem;
       font-family: "Comic Sans MS", cursive, sans-serif;
       border: none;
       padding: .7rem;

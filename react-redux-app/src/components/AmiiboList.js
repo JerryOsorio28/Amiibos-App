@@ -15,7 +15,6 @@ const AmiiboList = props => {
                     placeholder='Search Amiibo'
                     onClick={() => props.history.push('/search')}
                 />
-                <img id='searchIcon' src='https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png'/>
             </div>
             <div className='gameSeries'>
                 <Link to ='super-mario-bros' id= 'superMarioBros'>Super Mario Bros.</Link>

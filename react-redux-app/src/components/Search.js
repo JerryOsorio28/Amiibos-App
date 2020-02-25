@@ -33,8 +33,8 @@ const Search = props => {
                     onChange={updateSearch} 
                     type='text'
                     value={search.name}
+                    placeholder='Search Amiibo'
                 />
-                <img id='searchIcon' src='https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png'/>
             </div>
             <div className='cardContainer'>
                 {filteredAmiibos.map(amiibo => (
