@@ -12,11 +12,12 @@
 
 @mixin grow {
     &:hover {
-        box-shadow: 2px 2px 15px white;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.562);
         transform: scale(1.1);
-        transition: all .2s ease-in-out;
+        // z-index: 3;
+        transition: all .1s ease-in-out;
     }
-    transition: all .2s ease-out;
+    transition: all .1s ease-out;
 }
     
     @mixin buttons {
