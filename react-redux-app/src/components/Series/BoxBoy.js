@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import BBLogo from './images/boxboy/Box-Boy-Logo.png'
 
 const BoxBoy = props => {
 
@@ -25,7 +26,7 @@ const BoxBoy = props => {
         <>
         <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle'  src ='https://i.imgur.com/l9Z4bw0.png'/>
+                <img id='cardTitle'  src ={BBLogo}/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>

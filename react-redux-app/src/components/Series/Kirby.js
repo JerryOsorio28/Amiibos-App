@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import KirbyLogo from './images/Kirby/kirby-logo.png'
 
 const Kirby = props => {
 
@@ -25,7 +26,7 @@ const Kirby = props => {
         <>
         <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle'  src ='https://cdn.freebiesupply.com/logos/thumbs/2x/kirby-4-logo.png'/>
+                <img id='cardTitle'  src ={KirbyLogo}/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>

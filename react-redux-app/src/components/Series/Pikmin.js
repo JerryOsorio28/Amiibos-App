@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PikminLogo from './images/Pikmin/pikmin-logo.png'
 
 const Pikmin = props => {
 
@@ -25,6 +26,7 @@ const Pikmin = props => {
         <>
         <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
+                <img src={PikminLogo} id='cardTitle'/>
                 <div id='pressMe'>    
                     <h1>Press Me!</h1>
                 </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import QuestionBox from './images/Others/question-box.png'
 
 const Others = props => {
 
@@ -25,9 +26,8 @@ const Others = props => {
         <>
         <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <button className='defaultButtons' >Can you guess?</button>
+                <img src={QuestionBox} />
                 <div id='pressMe'>
-                    
                     <h1>Press Me!</h1>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CRLogo from './images/Chibi-Robo/CR-Logo.png'
 
 const ChibiRobo = props => {
 
@@ -25,7 +26,7 @@ const ChibiRobo = props => {
         <>
         <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle'  src ='https://upload.wikimedia.org/wikipedia/en/1/1f/Chibi-Robo_series_logo.png'/>
+                <img id='cardTitle'  src={CRLogo}/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>

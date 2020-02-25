@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import FELogo from './images/Fire-Emblem/fire-emblem-logo.png'
 
 const FireEmblem = props => {
 
@@ -25,7 +26,7 @@ const FireEmblem = props => {
         <>
         <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle'  src ='http://i.imgur.com/oMUlnsV.png'/>
+                <img id='cardTitle'  src ={FELogo}/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>

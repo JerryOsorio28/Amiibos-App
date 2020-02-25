@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SMBLogo from './images/superMarioBros/smb-logo.png'
 
 const SuperMarioBros = props => {
 
@@ -26,7 +27,7 @@ const SuperMarioBros = props => {
         <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryScene' onClick={dataSorter}>
                 <div  className='categoryHeader'>
-                    <img id='cardTitle' src ='https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Mario_Series_Logo.svg/1200px-Mario_Series_Logo.svg.png'/>
+                    <img id='cardTitle' src ={SMBLogo}/>
                     <div id='pressMe'>
                         <h1>Press Me!</h1>
                     </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ACLogo from './images/Animal-Crossing/AC-logo.png'
 
 const AnimalCrossing = props => {
 
@@ -38,7 +39,7 @@ const AnimalCrossing = props => {
         <>
         <div className='categoryScene'>
             <div className='categoryHeader'>
-                <img id='cardTitle' src ='https://animal-crossing.com/assets/img/home/logo.png' alt='Animal Crossing Title'/>
+                <img id='cardTitle' src ={ACLogo} alt='Animal Crossing Title'/>
             </div>
                 <div className='buttonsContainter'>
                     <button className='defaultButtons' onClick={cards}>Cards Collection</button>

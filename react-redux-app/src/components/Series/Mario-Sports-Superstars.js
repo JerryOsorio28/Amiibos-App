@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import MSSLogo from './images/mario-sports-superstars/MSS-logo.png'
 
 const MarioSportsSuperstars = props => {
 
@@ -25,7 +26,7 @@ const MarioSportsSuperstars = props => {
         <>
         <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle'  src ='https://nintendowire.com/wp-content/themes/nintendoinq-v2.0/images/game-logo-mariosports.png'/>
+                <img id='cardTitle'  src ={MSSLogo}/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>

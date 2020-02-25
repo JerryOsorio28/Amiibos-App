@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import MegaManLogo from './images/Mega-man/mega-man-logo.png'
 
 const MegaMan = props => {
 
@@ -25,7 +26,7 @@ const MegaMan = props => {
         <>
         <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle'  src ='https://upload.wikimedia.org/wikipedia/commons/d/de/Mega_man_logo.png'/>
+                <img id='cardTitle'  src ={MegaManLogo}/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>

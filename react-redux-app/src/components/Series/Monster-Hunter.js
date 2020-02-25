@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import MHLogo from './images/Monster-Hunter/MH-logo.png'
 
 const MonsterHunter = props => {
 
@@ -25,7 +26,7 @@ const MonsterHunter = props => {
         <>
         <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle'  src ='https://media.alienwarearena.com/media/e14e32b40e10a888a6c41820e43f149a.png'/>
+                <img id='cardTitle'  src ={MHLogo}/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>

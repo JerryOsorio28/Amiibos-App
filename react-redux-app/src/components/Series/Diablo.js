@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import DiabloLogo from './images/Diablo/diablo-logo.png'
 
 const Diablo = props => {
 
@@ -25,7 +26,7 @@ const Diablo = props => {
         <>
         <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle'  src ='http://pngimg.com/uploads/diablo/diablo_PNG67.png'/>
+                <img id='cardTitle'  src ={DiabloLogo}/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>

@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+import PokemonLogo from './images/Pokemon/pokemon-logo.png'
+import Pokeball from './images/Home/amiibo-pokeball.webp'
+
+//STYLES
+import '../AmiiboList.scss'
 
 const Pokemon = props => {
 
@@ -25,6 +30,8 @@ const Pokemon = props => {
         <>
         <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
+                <img src={Pokeball} style={{width: '150px', height:'150px'}}/>
+                <img src={PokemonLogo} id='cardTitle' />
                 <div id='pressMe'>
                     <h1>Press Me!</h1>
                 </div>
