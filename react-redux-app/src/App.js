@@ -37,11 +37,16 @@ import Search from './components/Search';
 
 //AUDIOS
 import ButtonClick from './components/Series/sounds/button-click.mp3'
+import ThemeSong from './components/Series/sounds/theme-song.mp3'
 
 
 function App() {
 
   const [amiiboList, setAmiiboList] = useState([]);
+
+  const [music, setMusic] = useState({
+    muted: false
+  })
 
     console.log('App', amiiboList)
 
@@ -60,28 +65,44 @@ function App() {
 
     //function that holds the sound clips
     const audioClips = [
-        {sound: ButtonClick, label: 'ButtonClick'}
+        {sound: ButtonClick, label: 'ButtonClick'},
+        {sound: ThemeSong, label: 'ThemeSong'}
     ]
     // console.log('SOUNDS', audioClips[0].sound)
 
     // function with the ability to play any sound
     const soundPlay = (src) => {
-        const sound = new Howl({
+        var sound = new Howl({
             src
         })
-        sound.play();
+          sound.play()
     }
-    // function that plays the sound
-    const playSound = () => {
+
+    // function that plays the button sound
+    const playButtonSound = () => {
       soundPlay(audioClips[0].sound)
+      Howler.volume(.1)
     }
+    // function that plays the theme song
+    const playThemeSong = () => {
+      if(music.muted === false){
+        soundPlay(audioClips[1].sound)
+      } else {
+        
+      }
+      Howler.volume(.1)
+    }
+
+    useEffect(() => {
+      playThemeSong()
+    }, [])
   
   return (
     <div className="App">
       <Route 
         exact path='/'
         render={props =>
-          <Home {...props} playSound={playSound}
+          <Home {...props} playButtonSound={playButtonSound}
           />
         }
       />
@@ -89,7 +110,7 @@ function App() {
         path='/search' 
         render={props => 
           <Search {...props} 
-            amiiboList={amiiboList} 
+            amiiboList={amiiboList}
           />
         } 
       />
@@ -97,7 +118,7 @@ function App() {
         path='/amiibo-list' 
         render={props => 
           <AmiiboList {...props} 
-            amiiboList={amiiboList} playSound={playSound}
+            amiiboList={amiiboList} playButtonSound={playButtonSound} music={music} setMusic={setMusic} playThemeSong={playThemeSong}
           />
         } 
       />

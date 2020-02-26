@@ -61,6 +61,8 @@
       #homeDescription{
           font-size: 18px;
           font-weight: bold;
+          margin: 0px;
+          text-decoration: underline;
       }
 
     #life {
@@ -99,6 +101,7 @@
         background-attachment: fixed;
         width: 40%;
         height: 30%;
+        box-shadow: 1px 1px 10px rgba(0,0,0,.5);
     }
     #mario{
         position: absolute;

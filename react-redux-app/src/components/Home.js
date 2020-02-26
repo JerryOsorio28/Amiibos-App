@@ -1,4 +1,4 @@
-import React from'react';
+import React, { useEffect, useState } from'react';
 
 //IMAGES
 import MarioLife from './Series/images/Home/mario-life.png'
@@ -22,7 +22,7 @@ console.log('props from home', props)
 
     const clickHandler = e => {
         e.preventDefault();
-        props.playSound()
+        props.playButtonSound()
         props.history.push('/amiibo-list')
     }
 
@@ -32,7 +32,6 @@ console.log('props from home', props)
             <img src={Background} id='background'/>
             <img src={MarioLife} alt='' id='life'/>
             <img src={MarioLife} alt='' id='smallerLife'/>
-            {/* <img src={MarioLife} alt='' id='smallestLife'/> */}
             <img src={Clouds} alt='' id='clouds'/>
             <img src={Mario} alt='' id='mario'/>
             <img src={Pikmin} alt='' id='pikmin'/>
