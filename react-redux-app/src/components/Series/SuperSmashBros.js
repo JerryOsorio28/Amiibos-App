@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SMBULogo from './images/SMB/smbu-logo.png'
 
 const SuperSmashBros = props => {
 
@@ -25,6 +26,7 @@ const SuperSmashBros = props => {
         <>
         <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
+                <img src={SMBULogo} id='cardTitle' />
                 <div id='pressMe'>
                     <h1>Press Me!</h1>
                 </div>

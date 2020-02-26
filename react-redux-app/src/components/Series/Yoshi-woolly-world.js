@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import YoshiLogo from './images/Yoshi-wolly-world/yoshi-logo.png'
 
 const YoshiWoollyWorld = props => {
 
@@ -25,7 +26,7 @@ const YoshiWoollyWorld = props => {
         <>
         <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle'  src ='https://i.imgur.com/1Pw1lgh.png'/>
+                <img id='cardTitle'  src ={YoshiLogo}/>
                 <div id='pressMe'>
                     
                     <h1>Press Me!</h1>

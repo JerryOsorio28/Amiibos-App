@@ -22,6 +22,14 @@
     align-items: center;
     justify-content: center;
 
+    #amiiboListBackground{
+      width: 600px;
+      height: 300px;
+      position: fixed;
+      top: 40%;
+      z-index: 0;
+    }
+
     #searchAmiiboBar{
       width: 20rem;
       border-radius: 5rem;

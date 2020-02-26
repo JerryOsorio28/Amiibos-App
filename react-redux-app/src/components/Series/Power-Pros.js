@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PowerProsLogo from './images/MLB-power-pros/power-pros-logo.png'
 
 const PowerPros = props => {
 
@@ -25,7 +26,7 @@ const PowerPros = props => {
         <>
         <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
-                <img id='cardTitle'  src ='https://vignette.wikia.nocookie.net/logopedia/images/4/40/7817d7f7-0bce-4bdf-b914-4eb40dc19f36.png/revision/latest?cb=20181014024307'/>
+                <img id='cardTitle'  src ={PowerProsLogo}/>
                 <div id='pressMe'>
                     <h1>Press Me!</h1>
                 </div>

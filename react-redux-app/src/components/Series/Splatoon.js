@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SplatoonLogo from './images/splatoon/splatoon-logo.png'
 
 const Splatoon = props => {
 
@@ -25,6 +26,7 @@ const Splatoon = props => {
         <>
         <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
+                <img src={SplatoonLogo} id='cardTitle' />
                 <div id='pressMe'>
                     <h1>Press Me!</h1>
                 </div>

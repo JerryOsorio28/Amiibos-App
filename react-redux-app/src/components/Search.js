@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import Background from './Series/images/Home/amiibo.png'
 
 const Search = props => {
 
     const [search, setSearch] = useState({
-        name: ''
+        name: '',
+        error: 'Amiibo not found'
     })
     console.log('search state', search)
 
@@ -14,12 +16,10 @@ const Search = props => {
 
     }
 
-    const filteredAmiibos = props.amiiboList.data.filter(
+    const filteredAmiibos = props.amiiboList.data === undefined ? null : props.amiiboList.data.filter(
         (amiibo) => {
             if(amiibo){
                 return amiibo.name.toLowerCase().indexOf(search.name.toLowerCase()) !== -1;
-            } else {
-                return <p>Una</p>
             }
         }
         );
@@ -35,9 +35,11 @@ const Search = props => {
                     value={search.name}
                     placeholder='Search Amiibo'
                 />
+                <img src={Background} id='amiiboListBackground'/>
             </div>
             <div className='cardContainer'>
-                {filteredAmiibos.map(amiibo => (
+                {filteredAmiibos === null ? null : filteredAmiibos.map(amiibo => (
+                    amiibo.character.toLowerCase() === search.name.toLowerCase() ?
                     <div className='amiiboCard'>
                         <h1>{amiibo.character}</h1>
                         <img src={amiibo.image} />
@@ -45,7 +47,9 @@ const Search = props => {
                         <p>Game Series: {amiibo.gameSeries}</p>
                         <p>Type: {amiibo.type}</p>
                     </div>
-                ))}
+                : null
+                ))
+                }
             </div>
       
         </>

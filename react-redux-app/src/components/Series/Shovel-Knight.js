@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SNLogo from './images/Shovel-Knight/shovel-knight-logo.png'
 
 const ShovelKnight = props => {
 
@@ -25,6 +26,7 @@ const ShovelKnight = props => {
         <>
         <div className='categoryScene' onClick={dataSorter}>
             <div className='categoryHeader'>
+                <img src={SNLogo} id='cardTitle' />
                 <div id='pressMe'>
                     <h1>Press Me!</h1>
                 </div>
