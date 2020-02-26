@@ -17,10 +17,12 @@ import Ganon from './Series/images/Home/amiibo-ganon.png'
 //STYLES
 import './Home.scss'
 
-const Home = (props) => {
+const Home = props => {
+console.log('props from home', props)
 
     const clickHandler = e => {
         e.preventDefault();
+        props.playSound()
         props.history.push('/amiibo-list')
     }
 

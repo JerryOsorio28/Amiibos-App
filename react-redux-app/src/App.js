@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.scss';
 import axios from 'axios';
+import {Howl, Howler} from 'howler';
 
 //Import Components here
 import AmiiboList from './components/AmiiboList';
@@ -34,6 +35,9 @@ import PowerPros from './components/Series/Power-Pros';
 import Diablo from './components/Series/Diablo';
 import Search from './components/Search';
 
+//AUDIOS
+import ButtonClick from './components/Series/sounds/button-click.mp3'
+
 
 function App() {
 
@@ -53,10 +57,34 @@ function App() {
                 console.log(err.response)
             })
     },[])
+
+    //function that holds the sound clips
+    const audioClips = [
+        {sound: ButtonClick, label: 'ButtonClick'}
+    ]
+    // console.log('SOUNDS', audioClips[0].sound)
+
+    // function with the ability to play any sound
+    const soundPlay = (src) => {
+        const sound = new Howl({
+            src
+        })
+        sound.play();
+    }
+    // function that plays the sound
+    const playSound = () => {
+      soundPlay(audioClips[0].sound)
+    }
   
   return (
     <div className="App">
-      <Route exact path='/' component={Home} />
+      <Route 
+        exact path='/'
+        render={props =>
+          <Home {...props} playSound={playSound}
+          />
+        }
+      />
       <Route 
         path='/search' 
         render={props => 
@@ -69,7 +97,7 @@ function App() {
         path='/amiibo-list' 
         render={props => 
           <AmiiboList {...props} 
-            amiiboList={amiiboList} 
+            amiiboList={amiiboList} playSound={playSound}
           />
         } 
       />

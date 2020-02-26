@@ -28,7 +28,7 @@ const Others = props => {
             <div className='categoryHeader'>
                 <img src={QuestionBox} />
                 <div id='pressMe'>
-                    <h1>Press Me!</h1>
+                    <h1 className='clickMe'>Click anywhere on the screen!</h1>
                 </div>
             </div>
             <div className='cardContainer'>

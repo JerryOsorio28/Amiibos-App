@@ -31,7 +31,7 @@ const EightBitMario = props => {
                 <img id='marioImg' src ={eightBitMarioCharacter}/>
                 <img id='cardTitle'  src={eightBitMario}/>
                 <div id='pressMe'>
-                    <h1>Press Me!</h1>
+                    <h1 className='clickMe'>Click anywhere on the screen!</h1>
                 </div>
             </div>
             <div className='cardContainer'>

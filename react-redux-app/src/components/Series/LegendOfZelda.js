@@ -29,7 +29,7 @@ const LegendOfZelda = props => {
                 <img id='cardTitle'  src ={ZeldaLogo}/>
                 <div id='pressMe'>
                     
-                    <h1>Press Me!</h1>
+                    <h1 className='clickMe'>Click anywhere on the screen!</h1>
                 </div>
             </div>
             <div className='cardContainer'>
