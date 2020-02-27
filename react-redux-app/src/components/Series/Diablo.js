@@ -21,7 +21,7 @@ const Diablo = props => {
             })
         }
         setArray(gameSeries)
-    })
+    },[])
 
     return (
         <>

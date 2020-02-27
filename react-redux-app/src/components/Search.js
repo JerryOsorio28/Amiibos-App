@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Background from './Series/images/Home/amiibo.png'
 import SearchIcon from '../icons/magnifying-glass.png'
 import Loader from 'react-loader-spinner'

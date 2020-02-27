@@ -36,7 +36,7 @@
     
     .categoryHeader {
       display: flex;
-      flex-direction: column;
+      // flex-direction: column;
       justify-content: center;
       align-items: center;
 
@@ -105,7 +105,7 @@
   #cardTitle{
     width: 25%;
     height: 100%;
-    margin: 0px 0px 1rem;
+    margin: 1rem 0px;
 
     @media (max-width: 500px){
       width: 70%;
