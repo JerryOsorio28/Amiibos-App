@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import Background from './Series/images/Home/amiibo.png'
 import SearchIcon from '../icons/magnifying-glass.png'
 import Loader from 'react-loader-spinner'
+import {Link} from 'react-router-dom'
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
+import Back from '../icons/back.png'
 
 // STYLES
 import './AmiiboList.scss';
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 
 const Search = props => {
 
@@ -45,11 +47,12 @@ const Search = props => {
                     onChange={updateSearch} 
                     type='text'
                     value={search.name}
-                    placeholder='Search Amiibo'
+                    placeholder="Search Amiibos!"
                 />
                 <img src={Background} id='amiiboListBackground'/>
                 <img src={SearchIcon} id='magnifyingGlass'/>
             </div>
+            <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
             <div className='cardContainer'>
                 {filteredAmiibos === null ? 
                     <Loader
@@ -71,10 +74,10 @@ const Search = props => {
                                 <div class="flip-card-back">
                                     <div id='amiibosDates'>
                                         <p style={{textAlign: 'left', paddingLeft: '10px'}} >Release Dates:</p>
-                                        <p>Au: {amiibo.release.au}</p>
-                                        <p>Eu: {amiibo.release.eu}</p>
-                                        <p>Jp: {amiibo.release.jp}</p>
-                                        <p>Na: {amiibo.release.na}</p>
+                                        <p>Au: {amiibo.release.au === null ? 'Not found' : amiibo.release.au}</p>
+                                        <p>Eu: {amiibo.release.eu === null ? 'Not found' : amiibo.release.eu}</p>
+                                        <p>Jp: {amiibo.release.jp === null ? 'Not found' : amiibo.release.jp}</p>
+                                        <p>Na: {amiibo.release.na === null ? 'Not found' : amiibo.release.na}</p>
                                     </div>
                                     <p style={{margin: '30px 0px 0px'}}>Game Series: {amiibo.gameSeries}</p>
                                     <p style={{marginTop: '10px 0px 0px'}}>Type: {amiibo.type}</p>

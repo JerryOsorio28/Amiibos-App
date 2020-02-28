@@ -1,4 +1,5 @@
 @import './mixins/mixins.scss';
+@import './keyframes/keyframes.scss';
 
 .homeContainer{
     position: relative;
@@ -63,6 +64,7 @@
           font-weight: bold;
           margin: 0px;
           text-decoration: underline;
+          animation: fadeInGrow 2s;
       }
 
     #life {
@@ -72,6 +74,7 @@
         transform: rotate(-30deg);
         width: 300px;
         height: 300px;
+        animation: fadeInUp 2s;
     }
     #smallerLife {
         position: absolute;
@@ -81,16 +84,8 @@
         transform: rotate(30deg);
         width: 100px;
         height: 100px;
+        animation: fadeInUp 2s;
     }
-    // #smallestLife {
-    //     position: absolute;
-    //     z-index: 1;
-    //     right: 400px;
-    //     top: 140px;
-    //     transform: rotate(5deg);
-    //     width: 50px;
-    //     height: 50px;
-    // }
     
     #background{
         position: relative;
@@ -102,13 +97,16 @@
         width: 40%;
         height: 30%;
         box-shadow: 1px 1px 10px rgba(0,0,0,.5);
+        animation: fadeInGrow 2s;
     }
+
     #mario{
         position: absolute;
         right: 50px;
         top: 50px;
         width: 300px;
         height: 300px;
+        animation: fadeInUp 2s;
     }
     #clouds{
         position: absolute;
@@ -117,6 +115,7 @@
         width: 700px;
         height: 400px;
         opacity: .9;
+        animation: fadeInUp 2s;
     }
     #pikmin{
         position: absolute;
@@ -125,6 +124,7 @@
         bottom: -20px;
         width: 200px;
         height: 200px;
+        animation: fadeInUp 2s;
     }
     #link{
         position: absolute;
@@ -133,6 +133,7 @@
         left: 300px;
         width: 400px;
         height: 400px;
+        animation: fadeInUp 2s;
     }
     #zelda{
         position: absolute;
@@ -141,6 +142,7 @@
         left: 400px;
         width: 300px;
         height: 400px;
+        animation: fadeInUp 2s;
     }
     #ganon{
         position: absolute;
@@ -148,6 +150,7 @@
         left: 130px;
         width: 300px;
         height: 300px;
+        animation: fadeInUp 2s;
     }
     #samus{
         position: absolute;
@@ -156,6 +159,7 @@
         top: 0px;
         width: 300px;
         height: 300px;
+        animation: fadeInUp 2s;
     }
     #sonic{
         position: absolute;
@@ -164,6 +168,7 @@
         bottom: -40px;
         width: 300px;
         height: 300px;
+        animation: fadeInUp 2s;
     }
     #tails{
         position: absolute;
@@ -172,8 +177,7 @@
         bottom: 100px;
         width: 200px;
         height: 200px;
-        // opacity: .8;
-        // transform: rotate(180deg);
+        animation: fadeInUp 2s;
 
     }
     #pokeball{
@@ -184,5 +188,6 @@
         right: 500px;
         width: 200px;
         height: 200px;
+        animation: fadeInUp 2s;
     }
 }

@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import ACLogo from './images/Animal-Crossing/AC-logo.png'
+import { Link } from 'react-router-dom';
+import Back from '../../icons/back.png'
+
+//STYLES
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 
 const AnimalCrossing = props => {
 
@@ -44,6 +49,7 @@ const AnimalCrossing = props => {
             <div className='categoryHeader'>
                 <img id='cardTitle' src ={ACLogo} alt='Animal Crossing Title'/>
             </div>
+            <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
                 <div className='buttonsContainter'>
                     <button className='defaultButtons' onClick={cards}>Cards Collection</button>
                     <button className='defaultButtons' onClick={figures}>Figure Collection</button>

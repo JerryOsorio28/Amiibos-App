@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import SearchIcon from '../icons/magnifying-glass.png'
 
 //Icons
-import SpeakerOn from '../icons/speaker-on.svg'
-import SpeakerOff from '../icons/speaker-off.svg'
+// import SpeakerOn from '../icons/speaker-on.svg'
+// import SpeakerOff from '../icons/speaker-off.svg'
+import Back from '../icons/back.png'
 
 // STYLES
 import './AmiiboList.scss'
@@ -27,15 +29,18 @@ const AmiiboList = props => {
         <div id='amiiboListContainer'>
             <img src={Background} id='listBackground'/> 
             <div className='searchContainer'>
-                <input 
-                    id='searchAmiiboBar'
-                    name='name'
-                    type='text'
-                    placeholder='Search Amiibo'
-                    onClick={() => props.history.push('/search')}
-                />
+                <Link to='/search'>
+                    <input 
+                        id='searchAmiiboBar'
+                        name='name'
+                        type='text'
+                        placeholder="Search Amiibos!"
+                        // onClick={() => props.history.push('/search')}
+                    />
+                </Link>
+            <img src={SearchIcon} id='magnifyingGlass'/>
             </div>
-            {/* <Link id='backButton' to='/'>Back</Link> */}
+            <Link to='/'><img src={Back} id='backButton'/></Link>
             {/* {props.music.muted === true ? 
                 <img src={SpeakerOff} id='speakerOff' onClick={muteSound}/>
                 : 
@@ -65,7 +70,11 @@ const AmiiboList = props => {
                 <Link to ='diablo' id= 'diablo' onClick={() => props.playButtonSound()}>Diablo</Link>
                 <Link to ='others' id= 'others' onClick={() => props.playButtonSound()}>Others</Link>
             </div>
-            <p id='footer'>© 2019 Jerry Osorio</p>
+            <p id='footer' style={{margin: '0px'}}>© 2019 Jerry Osorio</p>
+            <p style={{padding: '0px 0px 10px', margin: '0px'}}>Harvest5 by PeriTune | http://peritune.com
+Music promoted by https://www.free-stock-music.com
+Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/</p>
         </div>
     )
 }

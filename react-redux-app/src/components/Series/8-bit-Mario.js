@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import eightBitMario from './images/8-Bit-Mario/8BitMario.png'
 import eightBitMarioCharacter from './images/8-Bit-Mario/8BitMarioCharacter.png'
 import Loader from 'react-loader-spinner'
+import { Link } from 'react-router-dom';
+import Back from '../../icons/back.png'
 
 //STYLES
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
@@ -34,6 +36,7 @@ const EightBitMario = props => {
                 <img id='marioImg' src ={eightBitMarioCharacter}/>
                 <img id='cardTitle'  src={eightBitMario}/>
             </div>
+            <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
             <div className='cardContainer'>
                 {array.length === 0 ?
                     <Loader

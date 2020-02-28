@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import BBLogo from './images/boxboy/Box-Boy-Logo.png'
-import Loader from 'react-loader-spinner'
+import Loader from 'react-loader-spinner';
+import { Link } from 'react-router-dom';
+import Back from '../../icons/back.png';
 
 //SYLES
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
@@ -29,6 +31,7 @@ const BoxBoy = props => {
             <div className='categoryHeader'>
                 <img id='cardTitle'  src={BBLogo}/>
             </div>
+            <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
             <div className='cardContainer'>
                 {array.length === 0 ?
                     <Loader

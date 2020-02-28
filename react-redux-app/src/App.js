@@ -75,13 +75,13 @@ function App() {
         var sound = new Howl({
             src
         })
-          // sound.play() //uncomment to play music
+          sound.play() //uncomment to play music
     }
 
     // function that plays the button sound
     const playButtonSound = () => {
       soundPlay(audioClips[0].sound)
-      Howler.volume(.1)
+      Howler.volume(.0075)
     }
     // function that plays the theme song
     const playThemeSong = () => {
@@ -90,7 +90,7 @@ function App() {
       } else {
         
       }
-      Howler.volume(.1)
+      Howler.volume(.0075)
     }
 
     useEffect(() => {

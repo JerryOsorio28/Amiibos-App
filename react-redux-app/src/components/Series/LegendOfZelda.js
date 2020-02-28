@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import ZeldaLogo from './images/Zelda/zelda-logo.png'
 import Loader from 'react-loader-spinner'
+import { Link } from 'react-router-dom';
+import Back from '../../icons/back.png'
 
 //SYLES
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
@@ -28,6 +30,7 @@ const LegendOfZelda = props => {
             <div className='categoryHeader'>
                 <img id='cardTitle'  src={ZeldaLogo}/>
             </div>
+            <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
             <div className='cardContainer'>
                 {array.length === 0 ?
                     <Loader
