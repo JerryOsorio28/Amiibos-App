@@ -69,7 +69,15 @@
           text-decoration: underline;
           animation: fadeInGrow 2s;
 
-          @media (max-width: 570px){
+          @media (max-width: 320px){
+              position: relative;
+              z-index: 1;
+              top: -135px;
+              text-decoration: none;
+              font-size: 12px;
+              padding: 5px;
+          }
+          @media (min-width: 321px) and (max-width: 570px){
               position: relative;
               z-index: 1;
               top: -190px;
@@ -138,7 +146,7 @@
             width: 90%;
             height: 50%;
             position: absolute;
-            top: 350px;
+            top: 310px;
           }
         }
         #clouds{
