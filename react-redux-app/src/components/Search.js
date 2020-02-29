@@ -87,7 +87,6 @@ const Search = props => {
                     ))
                 }
             </div>
-      
         </>
     )
 };

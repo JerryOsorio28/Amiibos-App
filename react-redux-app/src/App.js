@@ -75,7 +75,7 @@ function App() {
         var sound = new Howl({
             src
         })
-          sound.play() //uncomment to play music
+          // sound.play() //uncomment to play music
     }
 
     // function that plays the button sound

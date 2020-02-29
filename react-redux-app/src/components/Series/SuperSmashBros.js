@@ -27,7 +27,7 @@ const SuperSmashBros = props => {
     // Super Smash Bros.
 
     return (
-        <>
+        
         <div className='categoryScene'>
             <div className='categoryHeader'>
                 <img src={SMBULogo} id='cardTitle' />
@@ -67,7 +67,7 @@ const SuperSmashBros = props => {
                     ))}
             </div>
         </div>
-        </>
+        
     )
 }
 

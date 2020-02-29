@@ -25,7 +25,7 @@ const Splatoon = props => {
     },[])
 
     return (
-        <>
+        
         <div className='categoryScene'>
             <div className='categoryHeader'>
                 <img src={SplatoonLogo} id='cardTitle' />
@@ -65,7 +65,7 @@ const Splatoon = props => {
                     ))}
             </div>
         </div>
-        </>
+        
     )
 }
 

@@ -26,7 +26,7 @@ const YoshiWoollyWorld = props => {
     // Yoshi's Woolly World
 
     return (
-        <>
+        
         <div className='categoryScene'>
             <div className='categoryHeader'>
                 <img id='cardTitle'  src ={YoshiLogo}/>
@@ -66,7 +66,7 @@ const YoshiWoollyWorld = props => {
                     ))}
             </div>
         </div>
-        </>
+        
     )
 }
 

@@ -30,7 +30,7 @@ const EightBitMario = props => {
     // 8-bit Mario
 
     return (
-        <>
+        
         <div className='categoryScene'>
             <div className='categoryHeader'>
                 <img id='marioImg' src ={eightBitMarioCharacter}/>
@@ -71,7 +71,7 @@ const EightBitMario = props => {
                     ))}
             </div>
         </div>
-        </>
+        
     )
 }
 

@@ -27,7 +27,7 @@ const SuperMarioBros = props => {
     // Super Mario Bros.
 
     return (
-        <>
+        
         <div className='categoryScene'>
             <div className='categoryScene'>
                 <div  className='categoryHeader'>
@@ -69,7 +69,7 @@ const SuperMarioBros = props => {
                 </div>
             </div>
         </div>
-        </>
+        
     )
 }
 
