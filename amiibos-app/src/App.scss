@@ -11,7 +11,7 @@
   height: 100%;
   text-align: center;
 
-  @media (max-width: 500px){
+  @media (max-width: 570px){
     width: 100%;  
   }
   
@@ -27,7 +27,7 @@
   
   .categoryScene{
 
-    @media (max-width: 500px){
+    @media (max-width: 570px){
       display: flex;
       flex-direction: column;
      }
@@ -38,7 +38,7 @@
       justify-content: center;
       align-items: center;
 
-      @media (max-width: 500px){
+      @media (max-width: 570px){
         width: 100%;
        }
       
@@ -57,7 +57,7 @@
         padding: 1rem;
         animation: fadeInOut 2s infinite;
 
-        @media (max-width: 500px){
+        @media (max-width: 570px){
           display: flex;
           justify-content: center;
           align-items: flex-end;
@@ -72,7 +72,7 @@
           background-color: red;
           box-shadow: none;
   
-          @media (max-width: 500px){
+          @media (max-width: 570px){
             font-size: 2rem;
             margin: 0;
            }
@@ -89,7 +89,7 @@
   #marioImg{
     width: 10%;
 
-    @media (max-width: 500px){
+    @media (max-width: 570px){
       width: 20%
      }
   }
@@ -105,7 +105,7 @@
     height: 100%;
     margin: 1rem 0px;
 
-    @media (max-width: 500px){
+    @media (max-width: 570px){
       width: 70%;
       height: 70%;
      }
@@ -114,7 +114,7 @@
   .defaultButtons {
     @include defaultButtons;
 
-    @media (max-width: 500px){
+    @media (max-width: 570px){
       width: 14rem;
      }
   }
@@ -156,7 +156,7 @@
       }
 
 
-      @media (max-width: 500px){
+      @media (max-width: 570px){
         width: 40%;
         padding: .5rem;
        }

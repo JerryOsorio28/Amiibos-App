@@ -14,7 +14,7 @@
     height: 100%;
     box-shadow: inset 1px 1px 20px rgba(0, 0, 0, 0.548);
 
-    @media (max-width: 500px){
+    @media (max-width: 570px){
       width: 100%;  
     }
 
@@ -29,7 +29,7 @@
         text-shadow: 2px 2px 2px black;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.384);
     
-        @media (max-width: 500px){
+        @media (max-width: 570px){
         width: 100%;
         padding: 1rem 0;
         }
@@ -53,9 +53,12 @@
         box-shadow: 1px 1px 2px black;
         @include grow;
     
-        @media (max-width: 500px){
-          width: 75vw;
-          padding: 1rem 0;
+        @media (max-width: 570px){
+            position: absolute;
+            bottom: 5%;
+            width: 50vw;
+            opacity: .9;
+            
         }
       }
 
@@ -65,6 +68,14 @@
           margin: 0px;
           text-decoration: underline;
           animation: fadeInGrow 2s;
+
+          @media (max-width: 570px){
+              position: relative;
+              z-index: 1;
+              top: -190px;
+              text-decoration: none;
+              font-size: 20px;
+          }
       }
 
     #life {
@@ -75,6 +86,10 @@
         width: 300px;
         height: 300px;
         animation: fadeInUp 2s;
+
+        @media (max-width: 570px){
+            display: none;
+          }
     }
     #smallerLife {
         position: absolute;
@@ -85,6 +100,10 @@
         width: 100px;
         height: 100px;
         animation: fadeInUp 2s;
+
+        @media (max-width: 570px){
+            display: none;
+          }
     }
     
     #background{
@@ -98,6 +117,13 @@
         height: 30%;
         box-shadow: 1px 1px 10px rgba(0,0,0,.5);
         animation: fadeInGrow 2s;
+
+        @media (max-width: 570px){
+            width: 100%;
+            position: absolute;
+            top: 0px;
+    
+          }
     }
 
     #mario{
@@ -107,15 +133,30 @@
         width: 300px;
         height: 300px;
         animation: fadeInUp 2s;
-    }
-    #clouds{
-        position: absolute;
-        right: -100px;
-        top: -100px;
-        width: 700px;
-        height: 400px;
-        opacity: .9;
-        animation: fadeInUp 2s;
+
+        @media (max-width: 570px){
+            width: 90%;
+            height: 50%;
+            position: absolute;
+            top: 350px;
+          }
+        }
+        #clouds{
+            position: absolute;
+            right: -100px;
+            top: -100px;
+            width: 700px;
+            height: 400px;
+            opacity: .9;
+            animation: fadeInUp 2s;
+
+            @media (max-width: 570px){
+                position: absolute;
+                left: -100px;
+                width: 150%;
+                height: 80%;
+                opacity: 1;
+                }
     }
     #pikmin{
         position: absolute;
@@ -125,6 +166,10 @@
         width: 200px;
         height: 200px;
         animation: fadeInUp 2s;
+
+        @media (max-width: 570px){
+            display: none;
+          }
     }
     #link{
         position: absolute;
@@ -134,6 +179,10 @@
         width: 400px;
         height: 400px;
         animation: fadeInUp 2s;
+
+        @media (max-width: 570px){
+            display: none;
+          }
     }
     #zelda{
         position: absolute;
@@ -143,6 +192,10 @@
         width: 300px;
         height: 400px;
         animation: fadeInUp 2s;
+
+        @media (max-width: 570px){
+            display: none;
+          }
     }
     #ganon{
         position: absolute;
@@ -151,6 +204,10 @@
         width: 300px;
         height: 300px;
         animation: fadeInUp 2s;
+
+        @media (max-width: 570px){
+            display: none;
+          }
     }
     #samus{
         position: absolute;
@@ -160,6 +217,10 @@
         width: 300px;
         height: 300px;
         animation: fadeInUp 2s;
+
+        @media (max-width: 570px){
+            display: none;
+          }
     }
     #sonic{
         position: absolute;
@@ -169,6 +230,10 @@
         width: 300px;
         height: 300px;
         animation: fadeInUp 2s;
+
+        @media (max-width: 570px){
+            display: none;
+          }
     }
     #tails{
         position: absolute;
@@ -178,6 +243,10 @@
         width: 200px;
         height: 200px;
         animation: fadeInUp 2s;
+
+        @media (max-width: 570px){
+            display: none;
+          }
 
     }
     #pokeball{
@@ -189,5 +258,9 @@
         width: 200px;
         height: 200px;
         animation: fadeInUp 2s;
+
+        @media (max-width: 570px){
+            display: none;
+          }
     }
 }
