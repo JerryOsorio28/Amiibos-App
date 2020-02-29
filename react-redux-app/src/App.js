@@ -44,10 +44,6 @@ function App() {
 
   const [amiiboList, setAmiiboList] = useState([]);
 
-  const [music, setMusic] = useState({
-    muted: false
-  })
-
     console.log('App', amiiboList)
 
     useEffect(() => {
@@ -81,16 +77,12 @@ function App() {
     // function that plays the button sound
     const playButtonSound = () => {
       soundPlay(audioClips[0].sound)
-      Howler.volume(.0075)
+      Howler.volume(.01)
     }
     // function that plays the theme song
     const playThemeSong = () => {
-      if(music.muted === false){
-        soundPlay(audioClips[1].sound)
-      } else {
-        
-      }
-      Howler.volume(.0075)
+      soundPlay(audioClips[1].sound)
+      Howler.volume(.01)
     }
 
     useEffect(() => {
