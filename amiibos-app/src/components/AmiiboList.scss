@@ -1,0 +1,480 @@
+@import './mixins/mixins.scss';
+@import './keyframes/keyframes.scss';
+
+#amiiboListContainer{
+    height: 100%;
+    background-color: red;
+}
+
+#listBackground{
+    position: fixed;
+    left: 25%;
+    top: 25%;
+    width: 700px;
+    height: 300px;
+    z-index: 0;
+}
+
+#backButton{
+  position: absolute;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  left: 20px;
+  top: 20px;
+  border: none;
+  border-radius: 2px;
+}
+
+#speakerOn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+}
+#speakerOff{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 20%;
+  height: 400px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  border-radius: 1rem;
+  margin-bottom: 50px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 1rem;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.amiiboCard, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+.amiiboCard {
+  border-radius: 1rem;
+}
+
+.flip-card-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  font-size: large;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 1rem;
+  transform: rotateY(180deg);
+} 
+
+.searchContainer{
+    position: relative;
+    top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    #magnifyingGlass{
+      position: relative;
+      right: 40px;
+      width: 30px;
+      height: 30px;
+      color: white;
+    }
+
+    #amiiboListBackground{
+      width: 600px;
+      height: 300px;
+      position: fixed;
+      top: 20%;
+      z-index: 0;
+    }
+
+    #searchAmiiboBar{
+      width: 20rem;
+      border-radius: 5rem;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      border: none;
+      padding: .7rem;
+    }
+
+    #searchIcon{
+      width: 2rem;
+      padding: .28rem;
+      background-color: #FFFFFF;
+      border-top-right-radius: 5rem;
+      border-bottom-right-radius: 5rem;
+    }
+  }
+
+  .gameSeries{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+    z-index: 1;
+
+    a {
+      @include buttons;
+    }
+
+    #superMarioBros{
+      background-image: url('./Series/images/superMarioBros/smb-button.jpg');
+      background-size: cover;
+      background-position: .4rem;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+      
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+    }
+    
+    #eightBitMario{
+      background-image: url('./Series/images/8-Bit-Mario/smb-button.png'); 
+      background-size: cover;
+      background-size: 70%;
+      background-position: 1rem;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+      
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+    }
+    
+    #superSmashBros{
+      background-image: url('./Series/images/SMB/smb-button.jpg'); 
+      background-size: cover;
+      background-size: 80%;
+      background-position: 1rem;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+      
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+    }
+    
+    #yoshiWoollyWorld{
+      background-image: url('./Series/images/Yoshi-wolly-world/yww-button.png'); 
+      background-size: cover;
+      background-position: 1rem;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+      
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+    }
+    
+    #skylanders{
+      background-image: url('./Series/images/Skylanders/skylanders-button.jpg'); 
+      background-size: cover;
+      background-position: .5rem;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+      
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+    }
+    
+    #legendOfZelda{
+      background-image: url('./Series/images/Zelda/Zelda-button.png'); 
+      background-size: cover;
+      background-position: .1rem -4rem;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+      
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+      
+    }
+    #animalCrossing{
+      background-image: url('./Series/images/Animal-Crossing/AC-button.png'); 
+      background-size: cover;
+      background-position: .5rem;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+      
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+      
+    }
+    #metroid{
+      background-image: url('./Series/images/Metroid/metroid-button.png'); 
+      background-size: 90%;
+      background-position: -1rem -1.5rem;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+      
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+      
+    }
+    #splatoon{
+      background-image: url('./Series/images/splatoon/splatoon-button.jfif'); 
+      background-size: cover;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+      
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+    }
+    #marioSportsSuperstars{
+      background-image: url('./Series/images/mario-sports-superstars/mss-button.jpg'); 
+      background-size: cover;
+      background-position: .1rem;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+      
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+      
+    }
+    #pokemon{
+      background-image: url('./Series/images/Pokemon/pokemon-button.jpg'); 
+      background-size: cover;
+      background-position: .1rem -4.5rem;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+      
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+    }
+    
+    #kirby{
+      background-image: url('./Series/images/Kirby/kirby-button.png'); 
+      background-size: cover;
+      background-position: .1rem -4rem;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+      
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+      
+    }
+    
+    #boxBoy{
+      background-image: url('./Series/images/boxboy/bb-button.webp'); 
+      background-size: 70%;
+      background-position: 2rem .1rem;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+      
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+    }
+    
+    #fireEmblem{
+      background-image: url('./Series/images/Fire-Emblem/FE-button.jpg'); 
+      background-size: cover;
+      background-position: .1rem -.5rem;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+      
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+    }
+    
+    #chibiRobo{
+      background-image: url('./Series/images/Chibi-Robo/CR-button.jpg'); 
+      background-size: cover;
+      background-position: .1rem -3rem;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+      
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+    }
+    
+    #megaMan{
+      background-image: url('./Series/images/Mega-man/MM-button.png'); 
+      background-size: cover;
+      background-position: .1rem -3rem;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+      
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+    }
+    #monsterHunter{
+      background-image: url('./Series/images/Monster-Hunter/MH-button.png'); 
+      background-size: cover;
+      background-position: 0 -3rem;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+      
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+    }
+    #shovelKnight{
+      background-image: url('./Series/images/Shovel-Knight/SK-button.jpg'); 
+      background-size: cover;
+      background-position: 0 -2rem;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+      
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+    }
+    #pikmin{
+      background-image: url('./Series/images/Pikmin/Pikmin-button.jpg'); 
+      background-size: 120%;
+      background-position: -1rem -2rem;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+      
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+      
+    }
+    #mblPowerPros{
+      background-image: url('./Series/images/MLB-power-pros/MBL-PP-button.jpg'); 
+      background-size: cover;
+      background-position: -1rem -3rem;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+      
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+    }
+    #diablo{
+      background-image: url('./Series/images/Diablo/diablo-button.jpg'); 
+      background-size: cover;
+      background-position: -1rem -.5rem;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+      
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+    }
+    #others{
+      background-color: #FFFFFF;
+      color: black;
+      text-shadow: none;
+      animation: fadeInUp 1s;
+      @include buttonsFont;
+      @include grow;
+
+      @media (max-width: 500px){
+        width: 90vw;
+        height: 6rem;
+        box-shadow: 2px 2px 10px black;
+      }
+    }
+  }
+  
+  #footer{
+    position: relative;
+    bottom: 10px;
+    font-size: 1rem;
+    margin: 10px;
+    
+  }
+  
