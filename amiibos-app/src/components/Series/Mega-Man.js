@@ -28,7 +28,7 @@ const MegaMan = props => {
         
             <div className='categoryScene'>
                 <div className='categoryHeader'>
-                    <img id='cardTitle'  src ={MegaManLogo}/>
+                    <img id='seriesTitle'  src ={MegaManLogo}/>
                 </div>
                 <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
                 <div className='cardContainer'>

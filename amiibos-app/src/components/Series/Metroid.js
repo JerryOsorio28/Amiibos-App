@@ -28,7 +28,7 @@ const Metroid = props => {
         
             <div className='categoryScene'>
                 <div className='categoryHeader'>
-                    <img id='cardTitle' src ={MetroidLogo}/>
+                    <img id='seriesTitle' src ={MetroidLogo}/>
                 </div>
                 <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
                 <div className='cardContainer'>

@@ -29,7 +29,7 @@ const Diablo = props => {
         
             <div className='categoryScene'>
                 <div className='categoryHeader'>
-                    <img id='cardTitle' src ={DiabloLogo}/>
+                    <img id='seriesTitle' src ={DiabloLogo}/>
                 </div>
                 <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
                 <div className='cardContainer'>

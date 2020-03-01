@@ -28,7 +28,7 @@ const PowerPros = props => {
         
             <div className='categoryScene'>
                 <div className='categoryHeader'>
-                    <img id='cardTitle' src={PowerProsLogo}/>
+                    <img id='seriesTitle' src={PowerProsLogo}/>
                 </div>
                 <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
                 <div className='cardContainer'>

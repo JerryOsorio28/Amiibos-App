@@ -29,7 +29,7 @@ const YoshiWoollyWorld = props => {
         
         <div className='categoryScene'>
             <div className='categoryHeader'>
-                <img id='cardTitle'  src ={YoshiLogo}/>
+                <img id='seriesTitle'  src ={YoshiLogo}/>
             </div>
             <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
             <div className='cardContainer'>

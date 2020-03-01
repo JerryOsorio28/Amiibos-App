@@ -33,7 +33,7 @@ const ChibiRobo = props => {
         
             <div className='categoryScene'>
                 <div className='categoryHeader'>
-                    <img id='cardTitle'  src={CRLogo}/>
+                    <img id='seriesTitle'  src={CRLogo}/>
                 </div>
                 <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
                 <div className='cardContainer'>

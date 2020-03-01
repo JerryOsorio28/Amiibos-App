@@ -33,7 +33,7 @@ const Pokemon = props => {
             <div className='categoryScene'>
                 <div className='categoryHeader'>
                     <img src={Pokeball} style={{width: '150px', height:'150px'}}/>
-                    <img src={PokemonLogo} id='cardTitle' />
+                    <img src={PokemonLogo} id='seriesTitle' />
                 </div>
                 <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
                 <div className='cardContainer'>

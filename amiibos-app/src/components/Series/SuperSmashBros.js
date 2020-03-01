@@ -30,7 +30,7 @@ const SuperSmashBros = props => {
         
         <div className='categoryScene'>
             <div className='categoryHeader'>
-                <img src={SMBULogo} id='cardTitle' />
+                <img src={SMBULogo} id='seriesTitle' />
             </div>
             <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
             <div className='cardContainer'>

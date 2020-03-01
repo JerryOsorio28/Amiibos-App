@@ -47,7 +47,7 @@ const AnimalCrossing = props => {
         
             <div className='categoryScene'>
                 <div className='categoryHeader'>
-                    <img id='cardTitle' src ={ACLogo} alt='Animal Crossing Title'/>
+                    <img id='seriesTitle' src ={ACLogo} alt='Animal Crossing Title'/>
                 </div>
                 <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
                     <div className='buttonsContainter'>

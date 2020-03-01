@@ -28,7 +28,7 @@ const MonsterHunter = props => {
         
             <div className='categoryScene'>
                 <div className='categoryHeader'>
-                    <img id='cardTitle'  src ={MHLogo}/>
+                    <img id='seriesTitle'  src ={MHLogo}/>
                 </div>
                 <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
                 <div className='cardContainer'>

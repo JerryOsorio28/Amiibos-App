@@ -34,7 +34,7 @@ const EightBitMario = props => {
         <div className='categoryScene'>
             <div className='categoryHeader'>
                 <img id='marioImg' src ={eightBitMarioCharacter}/>
-                <img id='cardTitle'  src={eightBitMario}/>
+                <img id='seriesTitle'  src={eightBitMario}/>
             </div>
             <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
             <div className='cardContainer'>

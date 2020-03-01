@@ -40,6 +40,7 @@ const Search = props => {
 
     return (
         <>
+            <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
             <div className='searchContainer'>
                 <input 
                     id='searchAmiiboBar'
@@ -52,7 +53,6 @@ const Search = props => {
                 <img src={Background} id='amiiboListBackground'/>
                 <img src={SearchIcon} id='magnifyingGlass'/>
             </div>
-            <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
             <div className='cardContainer'>
                 {filteredAmiibos === null ? 
                     <Loader

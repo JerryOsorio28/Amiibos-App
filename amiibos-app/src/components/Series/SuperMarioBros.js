@@ -31,7 +31,7 @@ const SuperMarioBros = props => {
         <div className='categoryScene'>
             <div className='categoryScene'>
                 <div  className='categoryHeader'>
-                    <img id='cardTitle' src ={SMBLogo}/>
+                    <img id='seriesTitle' src ={SMBLogo}/>
                 </div>
                 <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
                 <div className='cardContainer'>

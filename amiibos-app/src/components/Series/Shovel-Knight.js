@@ -28,7 +28,7 @@ const ShovelKnight = props => {
         
             <div className='categoryScene'>
                 <div className='categoryHeader'>
-                    <img src={SNLogo} id='cardTitle' />
+                    <img src={SNLogo} id='seriesTitle' />
                 </div>
                 <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
                 <div className='cardContainer'>

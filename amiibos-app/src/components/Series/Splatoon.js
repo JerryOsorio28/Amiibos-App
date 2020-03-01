@@ -28,7 +28,7 @@ const Splatoon = props => {
         
         <div className='categoryScene'>
             <div className='categoryHeader'>
-                <img src={SplatoonLogo} id='cardTitle' />
+                <img src={SplatoonLogo} id='seriesTitle' />
             </div>
             <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
             <div className='cardContainer'>
