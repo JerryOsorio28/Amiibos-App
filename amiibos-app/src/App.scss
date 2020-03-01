@@ -115,10 +115,14 @@
 
       #cardTitle{
         position: relative;
-        top: -300px;
+        top: -270px;
         height: 30px;
         width: 100%;
         padding: 0px 0px 10px;
+
+          @media (max-width: 320px){
+            top: -290px;
+        }
       }
 
       #amiiboSeries{
