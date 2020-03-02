@@ -30,7 +30,7 @@ const MarioSportsSuperstars = props => {
         
             <div className='categoryScene'>
                 <div className='categoryHeader'>
-                    <img id='cardTitle'  src ={MSSLogo}/>
+                    <img id='seriesTitle'  src ={MSSLogo}/>
                 </div>
                 <Link to='/amiibo-list'><img src={Back} id='backButton'/></Link>
                 <div className='cardContainer'>
@@ -44,14 +44,14 @@ const MarioSportsSuperstars = props => {
                         />
                         :
                         array.map(amiibo => (
-                            <div class="flip-card">
-                                <div class="flip-card-inner">
+                            <div className="flip-card">
+                                <div className="flip-card-inner">
                                     <div className='amiiboCard'>
                                         <h1 id='cardTitle'>{amiibo.character}</h1>
                                         <img src={amiibo.image} id='amiiboImage'/>
                                         <p id='amiiboSeries'>Amiibo Series: {amiibo.amiiboSeries}</p>
                                     </div>
-                                    <div class="flip-card-back">
+                                    <div className="flip-card-back">
                                         <div id='amiibosDates'>
                                             <p style={{textAlign: 'left', paddingLeft: '10px'}} >Release Dates:</p>
                                             <p>Au: {amiibo.release.au}</p>

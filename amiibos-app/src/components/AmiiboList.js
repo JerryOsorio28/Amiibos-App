@@ -28,6 +28,7 @@ const AmiiboList = props => {
     return(
         <div id='amiiboListContainer'>
             <img src={Background} id='listBackground'/> 
+            <Link to='/'><img src={Back} id='backButton'/></Link>
             <div className='searchContainer'>
                 <Link to='/search'>
                     <input 
@@ -38,9 +39,8 @@ const AmiiboList = props => {
                         // onClick={() => props.history.push('/search')}
                     />
                 </Link>
-            <img src={SearchIcon} id='magnifyingGlass'/>
+                <img src={SearchIcon} id='magnifyingGlass'/>
             </div>
-            <Link to='/'><img src={Back} id='backButton'/></Link>
             {/* {props.music.muted === true ? 
                 <img src={SpeakerOff} id='speakerOff' onClick={muteSound}/>
                 : 
