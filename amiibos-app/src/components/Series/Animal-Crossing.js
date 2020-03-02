@@ -10,7 +10,7 @@ const AnimalCrossing = props => {
 
     let [array, setArray] = useState([])
 
-    console.log('from AnimalCrossing', array)
+    // console.log('from AnimalCrossing', array)
 
     const cards = () => {
         let cards = [];

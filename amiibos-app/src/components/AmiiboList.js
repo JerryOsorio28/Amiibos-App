@@ -14,7 +14,7 @@ import Background from './Series/images/Home/amiibo.png'
 const AmiiboList = props => {
     // console.log('From the AmiiboList', props.amiiboList.data)
 
-        console.log('sound from amiiboList', props.music)
+        // console.log('sound from amiiboList', props.music)
     // const muteSound = () => {
     //     if(props.music.muted === true){
     //         props.setMusic({...props.music, muted: false})

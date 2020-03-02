@@ -15,7 +15,7 @@ const ChibiRobo = props => {
     
     let gameSeries = [];
 
-    console.log('DATA', props.amiiboList.data)
+    // console.log('DATA', props.amiiboList.data)
 
     useEffect(() => {
         if(props.amiiboList.data !== undefined){

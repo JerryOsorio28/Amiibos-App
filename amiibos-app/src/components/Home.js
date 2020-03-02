@@ -18,7 +18,7 @@ import Ganon from './Series/images/Home/amiibo-ganon.png'
 import './Home.scss'
 
 const Home = props => {
-console.log('props from home', props)
+// console.log('props from home', props)
 
     const clickHandler = e => {
         e.preventDefault();

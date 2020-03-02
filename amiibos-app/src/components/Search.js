@@ -15,7 +15,7 @@ const Search = props => {
         name: '',
         error: 'Amiibo not found'
     })
-    console.log('search state', search)
+    // console.log('search state', search)
 
 
     const updateSearch = (e) => {

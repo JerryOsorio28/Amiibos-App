@@ -48,7 +48,7 @@ function App() {
   //   muted: false
   // })
 
-    console.log('App', amiiboList)
+    // console.log('App', amiiboList)
 
     useEffect(() => {
         
